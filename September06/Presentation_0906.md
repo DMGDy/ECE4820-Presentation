@@ -35,6 +35,38 @@ style: |
 
 
 ----
+## Project Overview
+
+### Claims Investigation Committee (CIC) Multi-Input Test Device
+
+#### Goal
+- Develop a multi-input test device for the **Claims Investigation Committee (CIC)** to test various automotive sensors, modules, and components.
+
+#### Objectives
+- Develop a web-based front-end for the test device
+- Implement a communication layer for real-time data transfer
+- Design and build a test device core for sensor testing
+- Create a custom embedded Linux image for the test device
+- Integrate multiple signal testing capabilities (PWM, Voltage, CAN)
+- Implement a database system for storing and retrieving test results
+
+#### Features
+- Web Assembly Front End for test control and result display
+- Real-time data transfer
+- Custom Embedded Linux
+- Multiple signal testing capabilities: PWM, Voltage, CAN
+- Database system for storing and retrieving test results
+- Provide pass/fail feedback for each test
+
+#### Purpose
+- Support new electric-pneumatic hybrid braking system produced by **ZF Group** launching January 2025 by **Daimler AG**
+- Streamline the claims investigation process
+- Reduce time and cost associated with field claim evaluations
+- Improve accuracy in identifying faulty components
+- Enable efficient troubleshooting and root cause analysis
+- Facilitate data-driven decision making for product improvements
+
+----
 ## Project Specifications
 
 
@@ -69,8 +101,19 @@ style: |
 <div>
 
 ## I/O Interfaces
-- Peripheral I/O
-- PWM, Analog, Pulsed, CAN
+- PWM (Brake Signal Transmitter)
+    - Frequency: 200 ± 10 Hz
+    - Voltage: 8-32V DC
+    - Duty Cycle: 12.5% - 87.5%
+
+- Analog
+    Continuous Wear Sensor: 0.5V - 4.5V, 37 mm range
+    Pressure Sensor: 0.5V - 4.5V, 0-10 bar range
+    String Potentiometer: 0.5V - 4.5V, 37.5 mm range
+
+- CAN (Electronic Stability Control Module)
+    - Protocol: CAN 2.0A
+    - Baud Rate: 500 kbaud
 
 ## Embedded Systems
 - Custom Embedded Linux
@@ -79,17 +122,24 @@ style: |
 - ARM Cortex M4
 - ROM & peripherals
 
-
-
-## Devices Under Test
+## Devices Under Test (1st Model)
 - Brake Signal Transmitter
+    - PWM output for brake signal to make sure brakes are working within specifications
 - Pressure Sensor
+    - Voltage output proportional to pressure applied
 - Wear Sensor
+    - Voltage output proportional to brake pad wear
 - Electronic Stability Control Module
+    - Read from the module CAN data frame to check module functionality
+- String Potentiometer
+    - Determine the wear of the brake pads for alignment with production specifications
+    - Determine the stroke of the brake pedal for alignment with production specifications
 
 ## Dev Tools
 - STMCubeMX
 - STMCubeProgrammer
+- STM32CubeIDE
+- Git
 
 </div>
 </div>
