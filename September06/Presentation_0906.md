@@ -19,6 +19,10 @@ style: |
   h2 {
     font-size: 20px;
   }
+  h3 {
+    font-size: 18px;
+  }
+
 
 
 ----
@@ -30,53 +34,22 @@ style: |
 - Rohullah Sah
 
 **Advisor**
-- Dr. Janos Grantner
+ Dr. Janos Grantner
 
 **Sponsor**
-- ZF Group
+ ZF Group
 
 **Date:** September 06 2024
 
 
 ----
-## Project Overview
-
-### Claims Investigation Committee (CIC) Multi-Input Test Device
-
-#### Goal
-- Develop a multi-input test device for the **Claims Investigation Committee (CIC)** to test various automotive sensors, modules, and components.
-
-#### Objectives
-- Develop a web-based front-end for the test device
-- Implement a communication layer for real-time data transfer
-- Design and build a test device core for sensor testing
-- Create a custom embedded Linux image for the test device
-- Integrate multiple signal testing capabilities (PWM, Voltage, CAN)
-- Implement a database system for storing and retrieving test results
-
-#### Features
-- Web Assembly Front End for test control and result display
-- Real-time data transfer
-- Custom Embedded Linux
-- Multiple signal testing capabilities: PWM, Voltage, CAN
-- Database system for storing and retrieving test results
-- Provide pass/fail feedback for each test
-
-#### Purpose
-- Support new electric-pneumatic hybrid braking system produced by **ZF Group** launching January 2025 by **Daimler AG**
-- Streamline the claims investigation process
-- Reduce time and cost associated with field claim evaluations
-- Improve accuracy in identifying faulty components
-- Enable efficient troubleshooting and root cause analysis
-- Facilitate data-driven decision making for product improvements
-
-----
+## Project Specifications
 
 
 <div class="columns">
 <div>
 
-## Devices Under Test (1st Model)
+### Devices Under Test (1st Model)
 
 - Brake Signal Transmitter
     - PWM output for brake signal to make sure brakes are working within specifications
@@ -92,7 +65,7 @@ style: |
 
 
 
-## Communication Layer
+### Communication Layer
 
 - WebSocket real-time data
 - HTTP request methods
@@ -103,7 +76,7 @@ style: |
 </div>
 <div>
 
-## I/O Interfaces
+### I/O Interfaces
 
 - PWM (Brake Signal Transmitter)
     - Frequency: 200 ± 10 Hz
@@ -119,6 +92,13 @@ style: |
     - Protocol: CAN 2.0A
     - Baud Rate: 500 kbaud
 
+### Test Device Core
+- ARM Cortex A7
+- ARM Cortex M4
+- NAND Flash w/ Embedded Linux
+- Wi-Fi module
+- Shared memory
+
 
 </div>
 </div>
@@ -127,7 +107,7 @@ style: |
 ## Block Diagram
 
 ![height:600px](block_diagram.drawio.png)
-Comprehensive block diagram of all involved development tools and 
+*Comprehensive block diagram of all involved development tools and 
 hardware and developed software components to be implemented
-along with the interactions.
+along with the interactions.*
 
