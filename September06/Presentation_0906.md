@@ -16,6 +16,10 @@ style: |
   h1 {
     font-size: 24px;
   }
+  h2 {
+    font-size: 20px;
+  }
+
 
 ----
 # ECE4820: Senior Design II Project Overview
@@ -67,30 +71,32 @@ style: |
 - Facilitate data-driven decision making for product improvements
 
 ----
-## Project Specifications
 
 
 <div class="columns">
 <div>
 
-## User Interface
-- Web Assembly Front End
-- Device selection
-- Live test feedback
-- HTTP POST (JSON)
-- XML/CSV file serving
+## Devices Under Test (1st Model)
+
+- Brake Signal Transmitter
+    - PWM output for brake signal to make sure brakes are working within specifications
+- Pressure Sensor
+    - Voltage output proportional to pressure applied
+- Wear Sensor
+    - Voltage output proportional to brake pad wear
+- Electronic Stability Control Module
+    - Read from the module CAN data frame to check module functionality
+- String Potentiometer
+    - Determine the wear of the brake pads for alignment with production specifications
+    - Determine the stroke of the brake pedal for alignment with production specifications
+
+
 
 ## Communication Layer
 - WebSocket real-time data
 - HTTP request methods
 - JSON data handling
 - XML/CSV transfers
-
-## Test Device Core
-- ARM Cortex A7
-- NAND Flash w/ Linux
-- Wi-Fi module
-- Shared memory
 
 ## Yocto Project for Embedded Linux Developement
 - Custom Linux image
@@ -115,31 +121,6 @@ style: |
     - Protocol: CAN 2.0A
     - Baud Rate: 500 kbaud
 
-## Embedded Systems
-- Custom Embedded Linux
-- Nginx webserver
-- Rust backend
-- ARM Cortex M4
-- ROM & peripherals
-
-## Devices Under Test (1st Model)
-- Brake Signal Transmitter
-    - PWM output for brake signal to make sure brakes are working within specifications
-- Pressure Sensor
-    - Voltage output proportional to pressure applied
-- Wear Sensor
-    - Voltage output proportional to brake pad wear
-- Electronic Stability Control Module
-    - Read from the module CAN data frame to check module functionality
-- String Potentiometer
-    - Determine the wear of the brake pads for alignment with production specifications
-    - Determine the stroke of the brake pedal for alignment with production specifications
-
-## Dev Tools
-- STMCubeMX
-- STMCubeProgrammer
-- STM32CubeIDE
-- Git
 
 </div>
 </div>
@@ -148,5 +129,7 @@ style: |
 ## Block Diagram
 
 ![height:600px](block_diagram.drawio.png)
+Comprehensive block diagram of all involved development tools and 
+hardware and developed software components to be implemented
+along with the interactions.
 
-----
