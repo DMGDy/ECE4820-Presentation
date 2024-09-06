@@ -93,20 +93,18 @@ style: |
 
 
 ## Communication Layer
+
 - WebSocket real-time data
 - HTTP request methods
 - JSON data handling
 - XML/CSV transfers
-
-## Yocto Project for Embedded Linux Developement
-- Custom Linux image
-- Cross-compilation
 
 
 </div>
 <div>
 
 ## I/O Interfaces
+
 - PWM (Brake Signal Transmitter)
     - Frequency: 200 ± 10 Hz
     - Voltage: 8-32V DC
