@@ -14,7 +14,7 @@ style: |
     font-size: 14px;
   }
   h1 {
-    font-size: 21px;
+    font-size: 24px;
   }
 
 ----
