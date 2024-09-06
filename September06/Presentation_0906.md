@@ -25,10 +25,13 @@ style: |
 - Daniel Baker
 - Rohullah Sah
 
-**Date:** September 06 2024
+**Advisor**
+- Dr. Janos Grantner
 
-----
-## Project Overview
+**Sponsor**
+- ZF Group
+
+**Date:** September 06 2024
 
 
 ----
