@@ -85,7 +85,7 @@ style: |
 - Brake Signal Transmitter
 - Pressure Sensor
 - Wear Sensor
-- Suspension Control Module
+- Electronic Stability Control Module
 
 ## Dev Tools
 - STMCubeMX
