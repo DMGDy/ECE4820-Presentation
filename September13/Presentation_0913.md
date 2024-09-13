@@ -88,6 +88,28 @@ style: |
 
 # Progress Report - Daniel Baker
 
+## Prototyping Circuit Design
+
+- Created Circuits to simulate the Electronic Control Unit (ECU) of ZF Group's Braking System
+    - Created circuits to read in Brake Signal Transmitter, Pressure Sensor, String Potentiometer, Continuous Wear Sensor, and Electronic Statbility Control (ESC) Module
+    - Developed code for the input signals of these sensors to read according to the product specifications of each component
+    - Originally read through STM32F4 Discovery Board, replaced it with STM32MP157 Discovery Board
+    - Custom PCB design for the STM32MP157 Discovery Board to be used in the final product
+- Test code for the components to read the signals and share the data to the Cortex-A7 processor in progress
+    - Shared data will be displayed via a web interface using the components of the project developed by Dylan-Matthew Garza
+
+## Printed Circuit Board (PCB) Design
+- Initialized PCB design for components being used from the STM32MP157 Discovery Board
+- Components include: 
+    - STM32MP157FAC1 microprocessor with specified peripherals, and the necessary power supply components
+    - STPMIC1APQR power management IC
+    - MT41K256M16TW-107-P-V00H DDR3L SDRAM
+
+## In Progress
+- Finalizing Custom PCB design for the STM32MP157 Discovery Board and ECU simulation circuits
+- Developing test code for the components to read the signals and share the data to the Cortex-A7 processor
+
+    
 
 ----
 
