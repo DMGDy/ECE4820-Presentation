@@ -3,6 +3,19 @@
 This should contain all presentations for the class
 with directories named by the date to deliver the presentation.
 
+## Marp Transpilation
+
+```
+marp <presentation>.md --html
+```
+When html header or syntax is embedded.
+
+
+```
+marp <presentation>.md --html -o <presentation>.pdf --allow-local-files
+```
+When html header and output is to be a .pdf format. 
+
 ## September 06 Presentation
 
 This uses `marp` to transpile the markdown to an HTML file
