@@ -126,6 +126,7 @@ style: |
 ## In Progress
 
 - Properly configure and compile rpmsg and remoteproc kernel modules and firmware for IPCC (Inter-Processor communication controller)
+    - Necessary for OpenAMP framework
 - Write C program that uses rpmsg to talk to Arm Cortex-M4 from
 Linux
 
