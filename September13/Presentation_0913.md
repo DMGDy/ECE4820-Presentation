@@ -22,6 +22,23 @@ style: |
   h3 {
     font-size: 22px;
   }
+    code:not([class]) {
+    background-color: black;
+    color: #00ff00;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.9em;
+  }
+  pre {
+    background-color: black;
+    padding: 1em;
+    border-radius: 5px;
+  }
+  pre code {
+    color: #00ff00;
+    padding: 0;
+  }
 
 
 
@@ -86,7 +103,7 @@ style: |
 
 ----
 
-# Progress Report - Daniel Baker
+# Progress Report - Daniel Baker (1/2)
 
 ## Prototyping Circuit Design
 
@@ -105,6 +122,10 @@ style: |
     - STPMIC1APQR power management IC
     - MT41K256M16TW-107-P-V00H DDR3L SDRAM
 
+---- 
+
+# Progress Report - Daniel Baker (2/2)
+
 ## In Progress
 - Finalizing Custom PCB design for the STM32MP157 Discovery Board and ECU simulation circuits
 - Developing test code for the components to read the signals and share the data to the Cortex-A7 processor
@@ -119,24 +140,24 @@ style: |
 
 - Built Minimal Custom Bootable Image (per required software)
     - Wi-fi kernel module and firmware modules
-    - nginx webserver and wpa\_supplicant (802.11 supplicant)
-    - Command line tools and service manager (systemd and busybox)
+    - `nginx` webserver and `wpa_supplicant` (`802.11i` protocol supplicant)
+    - Command line tools and service manager (`systemd` and `busybox`)
 
 
 ## Web Assembly Application
 
-- Done completely in Rust using the Yew framework (no HTML written in index.html beyond header informaton)
+- Done completely in Rust using the Yew framework (no `HTML` written in `index.html` beyond header informaton)
 - Basic Interactivity 
     - Allows Selection of Test Devices
-    - Sends HTTP Method POST Request to server
-    - Sends a Rust Struct `TestData` in form of a serialized JSON
+    - Sends `HTTP` Method `POST` Request to server
+    - Sends a Rust Struct `TestData` in form of a serialized `JSON`
 
 
 ## Rust Backend Server
 
-- Handles CORS (Cross-Origin Resource Sharing) preflight request
-- Asynchronously awaits for a POST method
-    - Deserializes JSON and saves into its own `TestData` Struct
+- Handles `CORS` (Cross-Origin Resource Sharing) preflight request
+- Asynchronously awaits for a `POST` method
+    - Deserializes `JSON` and saves into its own `TestData` Struct
     - Responds with a return code `0` to web application once
     received
 
@@ -147,13 +168,12 @@ style: |
 
 ## In Progress
 
-- Properly configure and compile rpmsg and remoteproc kernel modules and firmware for IPCC (Inter-Processor communication controller)
+- Properly configure and compile `rpmsg` and `remoteproc` (IPC frameworks) kernel modules and firmware for IPCC (Inter-Processor communication controller)
     - Necessary for OpenAMP framework
     - Firmware needs to be manually flashed from Linux in order for it to work. 
     - Kernel Modules and settings not compiling despite manual setting 
-    - Might need to manually configure Devicetree (patch by writing custom .dts to compile to .dtb)
-- Write C program that uses rpmsg to talk to Arm Cortex-M4 from
-Linux
+    - Might need to manually configure Devicetree (patch by writing custom `.dts` to compile to `.dtb`)
+- Write C program that uses rpmsg to talk to Arm Cortex-M4 from Linux
 
 
 
