@@ -140,7 +140,7 @@ style: |
 
 - Built Minimal Custom Bootable Image (per required software)
     - Wi-fi kernel module and firmware modules
-    - `nginx` webserver and `wpa_supplicant` (`802.11i` protocol supplicant)
+    - `nginx` webserver and `wpa_supplicant` (`IEEE 802.11i` protocol supplicant)
     - Command line tools and service manager (`systemd` and `busybox`)
 
 
