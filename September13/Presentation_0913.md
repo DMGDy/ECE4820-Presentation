@@ -149,6 +149,9 @@ style: |
 
 - Properly configure and compile rpmsg and remoteproc kernel modules and firmware for IPCC (Inter-Processor communication controller)
     - Necessary for OpenAMP framework
+    - Firmware needs to be manually flashed from Linux in order for it to work. 
+    - Kernel Modules and settings not compiling despite manual setting 
+    - Might need to manually configure Devicetree (patch by writing custom .dts to compile to .dtb)
 - Write C program that uses rpmsg to talk to Arm Cortex-M4 from
 Linux
 

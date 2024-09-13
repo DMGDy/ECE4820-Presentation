@@ -228,6 +228,38 @@ h3 {
 }
 ;color:cyan;background-color:black;background-image:none;">
 <h1 id="progress-report---daniel-baker">Progress Report - Daniel Baker</h1>
+<h2 id="prototyping-circuit-design">Prototyping Circuit Design</h2>
+<ul>
+<li>Created Circuits to simulate the Electronic Control Unit (ECU) of ZF Group's Braking System
+<ul>
+<li>Created circuits to read in Brake Signal Transmitter, Pressure Sensor, String Potentiometer, Continuous Wear Sensor, and Electronic Statbility Control (ESC) Module</li>
+<li>Developed code for the input signals of these sensors to read according to the product specifications of each component</li>
+<li>Originally read through STM32F4 Discovery Board, replaced it with STM32MP157 Discovery Board</li>
+<li>Custom PCB design for the STM32MP157 Discovery Board to be used in the final product</li>
+</ul>
+</li>
+<li>Test code for the components to read the signals and share the data to the Cortex-A7 processor in progress
+<ul>
+<li>Shared data will be displayed via a web interface using the components of the project developed by Dylan-Matthew Garza</li>
+</ul>
+</li>
+</ul>
+<h2 id="printed-circuit-board-pcb-design">Printed Circuit Board (PCB) Design</h2>
+<ul>
+<li>Initialized PCB design for components being used from the STM32MP157 Discovery Board</li>
+<li>Components include:
+<ul>
+<li>STM32MP157FAC1 microprocessor with specified peripherals, and the necessary power supply components</li>
+<li>STPMIC1APQR power management IC</li>
+<li>MT41K256M16TW-107-P-V00H DDR3L SDRAM</li>
+</ul>
+</li>
+</ul>
+<h2 id="in-progress">In Progress</h2>
+<ul>
+<li>Finalizing Custom PCB design for the STM32MP157 Discovery Board and ECU simulation circuits</li>
+<li>Developing test code for the components to read the signals and share the data to the Cortex-A7 processor</li>
+</ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-background-color="black" data-color="cyan" data-theme="uncover" data-style=".columns {
   display: grid;
@@ -334,11 +366,14 @@ h3 {
 }
 ;color:cyan;background-color:black;background-image:none;">
 <h1 id="progress-report---dylan-matthew-garza-22">Progress Report - Dylan-Matthew Garza (2/2)</h1>
-<h2 id="in-progress">In Progress</h2>
+<h2 id="in-progress-1">In Progress</h2>
 <ul>
 <li>Properly configure and compile rpmsg and remoteproc kernel modules and firmware for IPCC (Inter-Processor communication controller)
 <ul>
 <li>Necessary for OpenAMP framework</li>
+<li>Firmware needs to be manually flashed from Linux in order for it to work.</li>
+<li>Kernel Modules and settings not compiling despite manual setting</li>
+<li>Might need to manually configure Devicetree (patch by writing custom .dts to compile to .dtb)</li>
 </ul>
 </li>
 <li>Write C program that uses rpmsg to talk to Arm Cortex-M4 from<br />
