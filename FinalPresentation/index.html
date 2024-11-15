@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
+    <title>Claims Investigation Committee Multi-Testing Input Device</title>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/ZFPresentation.css">
+    <style>
+.presenters {
+  list-style-type: none;
+  padding: 0;
+  font-size: 0.5em;
+  margin-top: 0.25em;
+}
+        .reveal .slides {
+          width: 85% !important;
+        }
+        .presenters li {
+          display: inline-block;
+          margin: 0 20px;
+        }
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 { text-transform: none !important; }
+        .reveal h1 {
+          font-size: 48px;
+        }
+    </style>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Slide 1: Title Slide -->
+        <section data-background-image = assets/ZFAirBalloon.gif
+          data-background-size = 30%     `
+          data-background-position = "top"
+          data-background-repeat = "repeat"
+          data-background-opacity = 0.5
+          data-background-gradient="repeating-radial-gradient(#283b95, #17b2c3)"
+          >                    
+          <h1 style="font-size: 1.5em; margin-top: 0.15em;">Claims Investigation Committee Multi-Testing Input Device</h1>
+          <p style="margin-bottom: 0.5em;">A ZF Group Project</p>
+          <p style="margin-bottom: 0.2em;"><small>Presented by</small></p>
+          <ul class="presenters">
+            <li>Daniel Baker</li>
+            <li>Dylan Matthew-Garza</li>
+            <li>Rohullah Sah</li>
+          </ul>
+        </section>
+
+
+
+        <!-- Slide 2: Project Overview with Vertical Slides -->
+        <section data-transition="convex">
+          <h2 style="margin-top: .0em">Project Overview</h2>
+
+          <!-- Vertical Slide 2.1: Overview of the Project -->
+          <section>
+            <ul>
+              <li class="fragment">Goal: Integrated test system for automotive safety components</li>
+              <li class="fragment">Web-based interface for operation and analysis</li>
+              <li class="fragment">Custom-built hardware, firmware, and software solution</li>
+              <li class="fragment">Multiple communication protocols: PWM, Analog, UART, OpenAMP & IPCC</li>
+              <li class="fragment">Streamlined field claim evaluation process</li>
+            </ul>
+            <aside class="notes">
+              - Explain what the project was
+              - We built a system that tests automotive safety components primarily in a lab setting for ZF Group's Claims Investigation Committee with the goal of streamlining the field claim evaluation process.
+              - The system is designed to be modular and flexible to accommodate a variety of safety components including brake signal transmitters, wear sensors, pressure sensors, and electronic stability control modules, all part of ZF Group's product line.
+              - The system is designed to be user-friendly and accessible to a wide range of users, including automotive safety component manufacturers, suppliers, and testing facilities.
+            </aside>
+          </section>
+
+          <!-- Vertical Slide 2.2: Why was this project necessary? -->
+          <section>
+            <h3>Why was this project necessary?</h3>
+            <ul>
+              <li class="fragment">Safety component testing is time-consuming</li>
+              <li class="fragment">Safety component testing is expensive</li>
+              <li class="fragment">Safety component testing is crucial</li>
+              <li class="fragment">Clientele demand for safety components are increasing</li>
+            </ul>
+          </section>
+
+
+          <!-- Vertical Slide 2.3: How did we do it? -->
+          <section>
+            <h3 style="margin-top: 0.5em">How did we do it?</h3>
+
+            <div style="display: flex; justify-content: space-between; margin-top: 0.5em;">
+              <!-- Hardware Column -->
+              <div style="width: 45%;">
+                <h4 class="fragment" style="color: #283b95;">Hardware Components</h4>
+                <ul style="font-size: 0.9em;">
+                  <li class="fragment">STM32MP157F-DK2</li>
+                  <li class="fragment">Custom PCB for:</li>
+                  <ul style="font-size: 0.9em;">
+                    <li class="fragment">Power management</li>
+                    <li class="fragment">Voltage scaling</li>
+                    <li class="fragment">Signal conditioning</li>
+                  </ul>
+                </ul>
+              </div>
+
+              <!-- Software Column -->
+              <div style="width: 45%;">
+                <h4 class="fragment" style="color: #17b2c3;">Software Stack</h4>
+                <ul style="font-size: 0.9em;">
+                  <li class="fragment">Custom Linux (Yocto)</li>
+                  <li class="fragment">Embedded C firmware</li>
+                  <li class="fragment">Rust backend server</li>
+                  <li class="fragment">WebAssembly frontend</li>
+                  <li class="fragment">Nginx web server</li>
+                  <li class="fragment">OpenAMP framework</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="fragment" style="margin-top: 1em;">
+              <p style="font-size: 0.8em; color: #fff;">
+              All components integrated through dual-core architecture for optimal performance
+              </p>
+            </div>
+          </section>
+
+
+          <!-- Vertical Slide 2.4: Where will this be used? -->
+          <section>
+            <h3>Where will this be used?</h3>
+            <div style="display: flex; justify-content: space-between; margin-top: 0.5em">
+              <!--Primary Use Case-->
+              <div style="width: 45%">
+                <h4 class="fragment" style="color: #283b95;">Primary Application</h4>
+                <div class="fragment" style="background: rgba(40, 59, 149, 0.1); padding: 15px; border-radius: 8px;">
+                  <h5 style="color: #283b95;">ZF CIC Test Labs</h5>
+                  <ul style="font-size: 0.8em;">
+                    <li class="fragment">Field claim validation</li>
+                    <li class="fragment">Quality assurance testing</li>
+                    <li class="fragment">Warranty investigation</li>
+                    <li class="fragment">Production validation</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Extended Applications Column -->
+              <div style="width: 45%;">
+                <h4 class="fragment" style="color: #17b2c3;">Extended Applications</h4>
+                <div class="fragment" style="background: rgba(23, 178, 195, 0.1); padding: 15px; border-radius: 8px;">
+                  <ul style="font-size: 0.8em;">
+                    <li class="fragment">Manufacturing QC
+                      <small style="display: block; color: #fff;">Real-time production testing</small>
+                    </li>
+                    <li class="fragment">Supplier Validation
+                      <small style="display: block; color: #fff;">Component certification</small>
+                    </li>
+                    <li class="fragment">R&D Facilities
+                      <small style="display: block; color: #fff;">Product development support</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <aside class="notes">
+              - Emphasize the importance of safety component testing in the automotive industry
+              - Time-saving tests lead to faster product development
+              - Faster time to market, faster solutions to problems, etc.
+            </aside>
+          </section>
+        </section>
+
+
+
+        <!-- Slide 3: Devices Under Test -->
+        <section data-transition="convex">
+          <h2 style="margin-top: 0em">Devices Under Test</h2>
+
+          <!-- Vertical Slide: BST -->
+          <section data-transition="fade-in slide-out">
+            <h3 style="margin-top: 1.3em">Brake Signal Transmitter (BST)</h3>
+            <div style="display: flex; justify-content: space-between;">
+              <div style="width: 60%;">
+                <ul><small>
+                    <li class="fragment">Two PWM outputs (0.7V - 4.5V)</li>
+                    <li class="fragment">Linear stroke measurement (0-8mm)</li>
+                    <li class="fragment">Operating voltage: 8-32V DC</li>
+                    <li class="fragment">Switch signal for system wake-up</li>
+                </ul></small>
+                <!-- Bottom section with functional overview -->
+                <div class="fragment" style="background: rgba(23, 178, 195, 0.1); padding: 15px; border-radius: 8px; font-size: 0.85em; margin-top: 0.5em;">
+                  <h4 style="color: #17b2c3; margin-bottom: 0.5em;">Functional Overview</h4>
+                  <p class="fragment"><small>Acts as the "brain" that reads how hard a driver presses the brake pedal. Essential for:</small></p>
+                  <ul><small>
+                      <li class="fragment">Converting pedal movement into electronic signals</li>
+                      <li class="fragment">Telling the brake system how much braking force is needed</li>
+                      <li class="fragment">Ensuring smooth and responsive braking</li>
+                  </ul></small>
+                </div>
+                <div class="fragment" style="background: rgba(23, 178, 195, 0.1); padding: 15px; border-radius: 8px; font-size: 0.85em; margin-top: 0.5em;">
+                  <p class="fragment"><small>Optional string potentiometer for precise stroke validation</small></p>
+                </div>
+
+
+              </div>
+              <div class="fragment" style="width: 35%;">
+                <img src="./assets/physical/BrakeSignalTransmitter.png" alt="BST" style="width: 100%;">
+              </div>
+            </div>
+          </section>
+
+
+          <!-- Vertical Slide: Pressure Sensor -->
+          <section data-transition="fade-in slide-out">
+            <h3>Pressure Sensor</h3>
+            <div style="display: flex; justify-content: space-between;">
+              <div style="width: 48%;">
+                <ul>
+                  <li class="fragment">Analog output: 0.5V - 4.5V DC</li>
+                  <li class="fragment">Pressure range: 0-10 bar</li>
+                  <li class="fragment">Operating voltage: 8-32V DC</li>
+                </ul>
+              </div>
+              <div class="fragment" style="width: 48%;">
+                <h4 style="color: #17b2c3;">Functional Overview</h4>
+                <div style="background: rgba(23, 178, 195, 0.1); padding: 15px; border-radius: 8px; font-size: 0.85em;">
+                  <p class="fragment">Sensor that continuously measures relative pressure in vehicle control systems. Essential for:</p>
+                  <ul>
+                    <li class="fragment">Brake system pressure monitoring</li>
+                    <li class="fragment">Pneumatic system diagnostics</li>
+                    <li class="fragment">Safety system validation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Vertical Slide: Continuous Wear Sensor -->
+          <section data-transition="fade-in slide-out">
+            <h3 style="margin-top: 1.3em">Continuous Wear Sensor</h3>
+            <div style="display: flex; justify-content: space-between;">
+              <div style="width: 60%;">
+                <ul>
+                  <li class="fragment">Analog output: 0.7V - 4.0V DC</li>
+                  <li class="fragment">Operating voltage: 5V DC</li>
+                  <li class="fragment">Measurement range: 37mm</li>
+                </ul>
+              </div>
+              <div class="fragment" style="width: 35%;">
+                <img src="./assets/physical/ContinuousWearSensor.png" alt="Wear Sensor" style="width: 100%;">
+              </div>
+            </div>
+            <!-- Bottom section with functional overview -->
+            <div class="fragment" style="background: rgba(23, 178, 195, 0.1); padding: 15px; border-radius: 8px; font-size: 0.85em; margin-top: 0.5em;">
+              <h4 style="color: #17b2c3; margin-bottom: 0.5em;">Functional Overview</h4>
+              <p class="fragment">Works like a monitor for your brake pads and discs. Helps with:</p>
+              <ul>
+                <li class="fragment">Warning when brakes are wearing down</li>
+                <li class="fragment">Predicting when maintenance will be needed</li>
+                <li class="fragment">Preventing unexpected brake failures</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Vertical Slide: Signal Types Overview -->
+          <section data-transition="fade-in slide-out">
+            <h3>Test Signal Requirements</h3>
+            <ul>
+              <li class="fragment">PWM Signal Processing (BST)</li>
+              <li class="fragment">Analog Voltage Measurement (Potentiometer, Pressure & Wear)</li>
+              <li class="fragment">Multiple Power Supply Rails (5V, 12V)</li>
+              <li class="fragment">Signal Conditioning & Protection</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Slide 7: PCB Design -->
+        <section data-transition="convex">
+          <h2 style="margin-top: 0em">PCB Design</h2>
+
+          <section>
+            <!-- Slide 1: Power Supply Slide -->
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+              <!-- Left Image -->
+              <div style="flex: 1; text-align: left;">
+                <img class="fragment" src="./assets/electronic/powersupply.png" alt="Power Supply" style="max-width: 80%; margin-right: 20px;">
+              </div>
+              <!-- Right Text -->
+              <div style="flex: 1; text-align: right;">
+                <h2 class="fragment">Power Supply Design</h2>
+                <p class="fragment">12V DC - 5V DC - 3.3V DC</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Slide 2: Peripherals Slide -->
+          <section>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+              <!-- Left Image -->
+              <div style="flex: 1; text-align: left;">
+                <h2 class="fragment">Peripheral I/O Design</h2>
+                <p class="fragment">Input/Output</p>
+              </div>
+              <!-- Right Text -->
+              <div style="flex: 1; text-align: right;">
+                <img src="./assets/electronic/peripherals.png" alt="Peripherals I/O" style="max-width: 80%; margin-left: 20px;">
+              </div>
+            </div>
+          </section>
+        </section>
+
+
+
+        <!-- Slide 4: System Architecture -->
+        <section data-transition="convex">
+          <section data-background-color="#131516">
+            <h2 style="margin-top:0em">Embedded Linux</h2>
+            <h3>Why?</h3>
+            <ul style="font-size:0.75em">
+              <li class="fragment">Industry standard for any embedded operating system</li>
+              <li class="fragment">Ability to use a wide range of open-source software and tools</li>
+              <li class="fragment">Access to a wider range of software development options with full standard libraries</li>
+              <li class="fragment">Allows for networking and self-hosting of web applications</li>
+              <ul>
+                <li class="fragment">Removes need the need for software to be installed</li>
+              </ul>
+              <li class="fragment"> Usage of a file system for saving data</li>
+            </ul>
+          </section>
+
+          <section data-background-color="#131516">
+            <h2 style="margin:0px">Building a Custom Embedded Linux Distribution with the Yocto Project</h2>
+            <ul style="font-size:0.65em">
+              <li class="fragment"> The Yocto Project is a collection of open-source tools for making a custom embedded linux distibution</li>
+              <ul >
+                <li class="fragment"> A distribution in Linux is an operating system that uses the Linux Kernel </li>
+                <li class="fragment"> In this case, we only take the Linux kernel and build the necessary software needed for our application </li>
+              </ul>
+              <li class="fragment"> OpenEmbedded - build engine that provide tools for cross-compilation for various architectures </li>
+              <ul>
+                <li class="fragment"> Provides essential metadata (software, source code, machine specific configuration) </li>
+                <li class="fragment"> Also provides <code>bitbake</code>, build tool responsible for parsing metadata as <em>recipes</em>
+                  and initializing build environment so it can build from source all the software to be deployed on the image </li>
+              </ul>
+            </ul>
+          </section>
+
+          <section data-background-color="#131516">
+            <h2 style="margin:0em">Using Yocto to Build a Linux Distribution for the STM32MP157F-DK2</h2>
+            What is needed?
+            <ul>
+              <li class="fragment">ST provides necessary metadata layer that provides BSPs (board support packages)</li>
+              <ul>
+                <li class="fragment">Necessary hardware drivers</li>
+                <li class="fragment">Boot firmware to load Linux</li>
+                <li class="fragment">Kernel specific settings for hardware support</li>
+                <li class="fragment">Necessary hardware configuration on boot as a DeviceTree</li>
+              </ul>
+              <li class="fragment">Software to connect to Wi-Fi (wpa_supplicant, and implementation of an IEEE 802.11i supplicant)</li>
+              <li class="fragment">Webserver to host a website (nginx)</li>
+            </ul>
+          </section>
+
+          <section data-background-color="#131516">
+            <h2 style="margin:0em">Inter-Processor Communication (IPC)</h2>
+            <div class = "fragment"style="font-size:0.85em"> 
+              With a heterogenous architecture, (Cortex-M4 and Cortex A7 share same memory) how is information shared?
+            </div>
+
+            <div class="fragment"><strong>With OpenAMP!</strong></div>
+
+            <ul style="font-size:0.65em">
+              <li class="fragment">OpenAMP (Open Asymmetric Multi-Processing) is a response to the increasing amount of heterogenous architectures</li>
+              <ul>
+                <li class="fragment"> Heterogenous architectures are systems that contains multiple processors with different instruction set</li>
+              </ul>
+              <li class="fragment"> Provides software framework that places a standard protocol for the shared memory to allow for easier communication</li>
+              <li class="fragment"> Key component for Cortex-M4 (microcontroller) is <code>libmetal</code>, an API that handles device interrupts
+                and memory accessing in order to properly communicate to Linux</li>
+              <li class="fragment"> In the Linux kernel (Cortex-A7), Remote Processor Messaging 
+                (<code>rpmsg</code>) is the used shared-memory based communication
+                protocol</li>
+              <li class="fragment"> On both processors, these communication protocols are not directly to each other, but implement the VirtIO open standard,
+                which buffer the messages between the two in a shared memory space</li>
+            </ul>
+
+          </section>
+
+          <section data-background-color ="#000000">
+            <h2 style="margin-top: 0em">System Architecture</h2>
+            <!-- Vertical Slide 4.1 -->
+            <section data-transition="fade-in slide-out">
+              <img  src="./assets/diagrams/block_diagram.drawio.png" alt="System Block Diagram" width="801px">
+              <aside class="notes">
+                - Emphasize the importance of safety component testing in the automotive industry
+                - Time-saving tests lead to faster product development
+                - Faster time to market, faster solutions to problems, etc.
+              </aside>
+            </section>
+          </section>
+        </section>
+
+        <!-- Slide 5: Hardware Components -->
+        <section data-transition="convex">
+          <h2 style="margin-top: 0em">Hardware Interfacing</h2>
+          <!-- Vertical Slide 5.1: Processing Unit -->
+          <section>
+            <h3>Dual-Core Processing Unit</h3>
+            <div style="display: flex; justify-content: space-between;">
+              <div style="width: 48%;">
+                <h4 style="color: #283b95;">ARM Cortex-A7</h4>
+                <ul>
+                  <li class="fragment">Runs Embedded Linux</li>
+                  <li class="fragment">Hosts web server</li>
+                  <li class="fragment">Manages data storage</li>
+                  <li class="fragment">Controls firmware loading</li>
+                </ul>
+              </div>
+              <div style="width: 48%;">
+                <h4 style="color: #17b2c3;">ARM Cortex-M4</h4>
+                <ul>
+                  <li class="fragment">Real-time signal processing</li>
+                  <li class="fragment">Device interfacing</li>
+                  <li class="fragment">Data acquisition</li>
+                  <li class="fragment">Test validation</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Vertical Slide 2: Signal Interfaces -->
+          <section>
+            <h3>Signal Interfaces</h3>
+            <div style="display: flex; justify-content: space-between;">
+              <div style="width: 48%;">
+                <h4 style="color: #283b95;">Input Signals</h4>
+                <ul>
+                  <li class="fragment">PWM (0.7V - 4.5V)</li>
+                  <li class="fragment">Analog (0-10V)</li>
+                </ul>
+              </div>
+              <div style="width: 48%;">
+                <h4 style="color: #17b2c3;">Signal Conditioning</h4>
+                <ul>
+                  <li class="fragment">Voltage dividers</li>
+                  <li class="fragment">Protection circuits</li>
+                  <li class="fragment">Level shifters</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Vertical Slide 3: Power Management -->
+          <section>
+            <h3>Power Management</h3>
+            <ul>
+              <li class="fragment">Input: 12V-24V DC</li>
+              <li class="fragment">Multiple output rails:</li>
+              <ul>
+                <li class="fragment">12V for BST, Pressure Sensor, String Potentiometer</li>
+                <li class="fragment">5V for Wear Sensor</li>
+                <li class="fragment">3.3V for microcontroller</li>
+              </ul>
+            </ul>
+          </section>
+        </section>
+
+
+        <!-- Slide 6: Software Stack -->
+        <section data-transition="convex">
+          <h2 style="margin-top=0em">Software Stack</h2>
+          <!-- Vertical Slide 1: Overview with Dylan's Diagram -->
+          <section>
+            <h3 style="margin-top: 1.3em">System Architecture</h3>
+            <img src="./assets/diagrams/software_stack.drawio.png" alt="Software Architecture" style="width: 80%;">
+          </section>
+
+          <!-- Vertical Slide 2: Key Components -->
+          <section>
+            <h3>Key Software Components</h3>
+            <div style="display: flex; justify-content: space-between;">
+              <div style="width: 48%;">
+                <h4 style="color: #283b95;">Frontend</h4>
+                <ul>
+                  <li class="fragment">Web Assembly</li>
+                  <li class="fragment">Real-time updates</li>
+                  <li class="fragment">Device selection</li>
+                  <li class="fragment">Test status display</li>
+                </ul>
+              </div>
+              <div style="width: 48%;">
+                <h4 style="color: #17b2c3;">Backend</h4>
+                <ul>
+                  <li class="fragment">Custom Linux (Yocto)</li>
+                  <li class="fragment">Rust API server</li>
+                  <li class="fragment">OpenAMP framework</li>
+                  <li class="fragment">Data logging</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Vertical Slide 3: Communication Flow -->
+          <section>
+            <h3>Communication Flow</h3>
+            <ul>
+              <li class="fragment">Browser ↔ Web Server: HTTP/JSON</li>
+              <li class="fragment">A7 ↔ M4: OpenAMP/RPMSG</li>
+              <li class="fragment">M4 ↔ Devices: PWM/CAN/Analog</li>
+              <li class="fragment">Data Storage: CSV/System logs</li>
+            </ul>
+          </section>
+        </section>
+
+
+
+
+        <!-- Slide 8: Testing Methodology -->
+        <section>
+          <h2>Testing Methodology</h2>
+          <ul>
+            <li>Signal acquisition (PWM, Analog)</li>
+            <li>Real-time data processing</li>
+            <li>Web-based visualization</li>
+          </ul>
+        </section>
+
+        <!-- Slide 9: Challenges and Solutions -->
+        <section>
+          <h2>Challenges and Solutions</h2>
+          <!-- Add your specific challenges and solutions here -->
+        </section>
+
+        <!-- Slide 10: Future Work -->
+        <section>
+          <h2>Future Work</h2>
+          <!-- Add your plans for future development here -->
+        </section>
+
+        <!-- Slide 11: Q&A -->
+        <section>
+          <h2>Q&amp;A</h2>
+          <p>Thank you for your attention!</p>
+        </section>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Scripts -->
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        controls: true,
+        controlsTutorial: true,
+        controlsLayout: 'bottom-right',
+        controlsBackArrows: 'faded',
+        progress: true,
+        minScale: 0.2,
+        maxScale: 1.5,
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+      });
+    </script>
+  </body>
+</html>
+
