@@ -1,0 +1,5 @@
+PWD /home/dylandy/Classes/ECE4820/Presentations/FinalPresentation-Release
+INPUT /nix/store/xqizzd8x3y956ayqk8f4xsqab0r12rix-texlive-2023-env/share/texmf-var/web2c/texmf.cnf
+INPUT /nix/store/xqizzd8x3y956ayqk8f4xsqab0r12rix-texlive-2023-env/share/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT theme.tex
+OUTPUT build/theme.log

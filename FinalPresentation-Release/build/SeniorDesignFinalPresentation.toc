@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Design and Implementation}{3}{0}{2}
+\beamer@subsectionintoc {2}{1}{Project Specifications and Overview}{3}{0}{2}
+\beamer@subsectionintoc {2}{2}{Hardware Design}{6}{0}{2}
+\beamer@subsectionintoc {2}{3}{Cortex-M4 Firmware to Test Devices}{7}{0}{2}

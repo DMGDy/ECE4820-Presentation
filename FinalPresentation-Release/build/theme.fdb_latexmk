@@ -1,0 +1,11 @@
+# Fdb version 4
+["pdflatex"] 1731880092.18203 "theme.tex" "build/theme.pdf" "theme" 1731880099.09388 2
+  "/nix/store/xqizzd8x3y956ayqk8f4xsqab0r12rix-texlive-2023-env/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1 8221929 92206ec65258aaf86dd4f98625a3b0af ""
+  "/nix/store/xqizzd8x3y956ayqk8f4xsqab0r12rix-texlive-2023-env/share/texmf-var/web2c/texmf.cnf" 1 42643 7275a29cffb4534f32165dc2707737d7 ""
+  "build/theme.aux" 1731880092.18072 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "theme.tex" 1731879539.01735 824 0f40718a14db66e3cfcc7b815831ae90 ""
+  (generated)
+  "build/theme.aux"
+  "build/theme.log"
+  "build/theme.pdf"
+  (rewritten before read)
