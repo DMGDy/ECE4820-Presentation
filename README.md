@@ -42,3 +42,9 @@ Presentation is similar to last
 - Gantt Chart (Progress Made)
 - Updated Budget Projection (if any)
 - Progress report updated (from each group member)
+
+## Final Presentation
+Only run when inside the `FinalPresentation-Release` directory!
+```
+latexmk -pdf -output-directory=build
+```
