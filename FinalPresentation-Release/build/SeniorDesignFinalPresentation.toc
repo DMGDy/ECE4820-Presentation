@@ -3,3 +3,4 @@
 \beamer@subsectionintoc {2}{1}{Project Specifications and Overview}{3}{0}{2}
 \beamer@subsectionintoc {2}{2}{Hardware Design}{6}{0}{2}
 \beamer@subsectionintoc {2}{3}{Cortex-M4 Firmware to Test Devices}{7}{0}{2}
+\beamer@subsectionintoc {2}{4}{Embedded Linux With Yocto Project}{10}{0}{2}

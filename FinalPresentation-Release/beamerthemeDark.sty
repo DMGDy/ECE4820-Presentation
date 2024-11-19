@@ -2,9 +2,15 @@
 \usepackage[dvipsnames]{xcolor}
 
 \definecolor{Dark}{HTML}{131516}
+\definecolor{VSPurple}{HTML}{B886F2}
+\definecolor{VSPurpleDark}{HTML}{7351AC}
+\definecolor{VSBlue}{HTML}{23A8F2}
+\definecolor{VSBlueDark}{HTML}{0079BA}
+\definecolor{VSBlueLight}{HTML}{00BCF2}
 
-\setbeamercolor{normal text}{fg=ProcessBlue,bg=Dark}
-\setbeamercolor{structure}{fg=RoyalBlue}
+
+\setbeamercolor{normal text}{fg=VSBlue,bg=Dark}
+\setbeamercolor{structure}{fg=VSPurple}
 
 \setbeamercolor{alerted text}{fg=red!85!black}
 \setbeamercolor{item projected}{use=item,fg=black,bg=item.fg!35}
@@ -13,17 +19,26 @@
 \setbeamercolor*{palette secondary}{use=structure,fg=structure.fg!95!black}
 \setbeamercolor*{palette tertiary}{use=structure,fg=structure.fg!90!black}
 \setbeamercolor*{palette quaternary}{use=structure,fg=structure.fg!95!black,bg=black!80}
-\setbeamercolor{section in head/foot}{bg=black!90} % Change the colors for sections
+\setbeamercolor{section in head/foot}{fg=VSPurpleDark,bg=black!90} % Change the colors for sections
 \setbeamercolor{subsection in head/foot}{fg=white, bg=black!80} % Change the colors for subsections
-\setbeamercolor*{framesubtitle}{fg=ProcessBlue}
+\setbeamercolor*{framesubtitle}{fg=VSBlueDark}
 
-\setbeamercolor*{block title}{parent=structure,bg=black!80}
-\setbeamercolor*{block body}{fg=Cyan,bg=black!90}
-\setbeamercolor*{block title alerted}{parent=alerted text,bg=black!95}
-\setbeamercolor*{block title example}{parent=example text,bg=black!95}
+\setbeamercolor*{block title}{parent=structure,bg=black!85}
+\setbeamercolor*{block body}{fg=VSBlue,bg=black!90}
 
 \usefonttheme{default}  
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{caption}[numbered]
 
 \useoutertheme[subsection=true]{miniframes}
+\setbeamertemplate{caption}[numbered]
+
+\setbeamertemplate{enumerate items}[square]
+\setbeamercolor{enumerate subitem}{fg=VSBlueDark}
+
+% Import the Berkeley TOC styles
+\makeatletter
+\setbeamertemplate{section in toc}[square]% Use Berkeley's style for TOC
+\setbeamertemplate{subsection in toc}[square]
+\setbeamertemplate{subsubsection in toc}[square]
+\makeatother
