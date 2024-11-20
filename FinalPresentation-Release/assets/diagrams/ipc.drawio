@@ -1,9 +1,27 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0" version="24.8.6">
   <diagram name="Page-1" id="Kpq6ontCMsAG1n8Jvqgc">
-    <mxGraphModel>
+    <mxGraphModel dx="1787" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="800" pageHeight="600" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="jLMG2Ni_qjARq92GQMrh-11" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" width="640" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="jLMG2Ni_qjARq92GQMrh-7" value="Linux Kernel" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="190" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jLMG2Ni_qjARq92GQMrh-9" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="190" width="520" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="jLMG2Ni_qjARq92GQMrh-10" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="60" width="520" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="jLMG2Ni_qjARq92GQMrh-4" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Linux User Space&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="70" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jLMG2Ni_qjARq92GQMrh-12" value="Text" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="190" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
