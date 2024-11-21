@@ -1,0 +1,25 @@
+\frametitle{Using The Yocto Project to Build a Custom Distribution}
+  \begin{minipage}{0.485\textwidth}
+    \begin{block}{What is the Yocto Project and why?}
+      \small{
+        \begin{itemize}
+          \item Most popular set of tools for embedded Linux Development
+          \item Collection of OSS tools to make a custom Linux distribution
+          \item Independent of target architecture
+          \item \DarkBoldP{bitbake} build tool handles \LightBold{metadata}
+          \item \LightBold{MetaData} can be in the form of
+            \begin{itemize}
+              \item software build/patch instructions
+              \item configuration files for software
+            \end{itemize}
+          \item \LightBold{MetaData} organized in its \LightBold{Layer Model}
+        \end{itemize}
+      }
+    \end{block}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.495\textwidth}
+    \begin{figure}
+      \includegraphics[width=175px]{assets/diagrams/yocto-environment.png}
+    \end{figure}
+  \end{minipage}
