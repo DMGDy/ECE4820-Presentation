@@ -3,6 +3,7 @@
 \usepackage{graphics}
 %\usepackage{cascadia-code}
 \usepackage{listings}
+\usepackage{soul}
 \usepackage[default]{sourcesanspro}
 \usepackage[T1]{fontenc}
 \usepackage[font=tiny]{caption}
@@ -142,16 +143,14 @@
 
 \begin{frame}
   \frametitle{Project Specifications}
-  \large
+  \includegraphics[width=0.75\textwidth]{assets/diagrams/hardware.png}
   \begin{block}{What this project aims to accomplish:}
     \begin{enumerate}
       \item {\DarkBold{Device Interfacing}}
         \begin{enumerate}
-          \large
           \item Properly read Device Signals using the ARM Cortex-M4 on the onboard microcontroller on the 
             \LightBold{STM32MP157F-DK2}:
             \begin{itemize}
-              \large
               \item PWM Duty Cycle
               \item Frequency
               \item Voltages through an analog-to-digital converter (ADC)
@@ -200,6 +199,11 @@
   \end{block}
 \end{frame}
 
+\begin{frame}
+  \frametitle{Comprehensive System Block Diagram}
+  \includegraphics[width=0.90\textwidth]{assets/diagrams/block_diagram.drawio.png}
+\end{frame}
+
 %==============================================================================
 % DESIGN AND IMPLEMENTATION SECTION: Gantt Chart
 %==============================================================================
@@ -213,14 +217,9 @@
 \begin{frame}
   \frametitle{Budget Projection}
   \vspace{-.2025cm}
-  %\includegraphics[height=\dimexpr\paperheight-1.825cm\relax]{assets/diagrams/}
+  \includegraphics[height=0.675\textwidth]{assets/diagrams/budget.png}
 \end{frame}
 
-%==============================================================================
-% DESIGN AND IMPLEMENTATION SECTION: Hardware Design
-%==============================================================================
-% Talk about the need and design of custom hardware (eg. simplify wiring, scale voltages for microcontroller
-%   simplify connectivity, pull-up resistor network for BST)
 \AtBeginSubsection[]
 {
   \begin{frame}
@@ -229,25 +228,266 @@
   \end{frame}
 }
 
-
+%==============================================================================
+% DESIGN AND IMPLEMENTATION SECTION: Hardware Design
+%==============================================================================
 \subsection{Hardware Design}
 \begin{frame}
-  \centering
-  \frametitle{Custom Hardware Design}
+  \frametitle{Power Supply Schematic Design}
+  \begin{minipage}{0.7\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth]{assets/electronic/pwrsupply.jpg}
+      \caption{\it power management system that converts 12V DC input into multiple usable voltage levels.}
+    \end{figure}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.275\textwidth}
+    \begin{block}{Overview}
+      \begin{itemize}
+          \small
+        \item 12V DC stable voltage using LM7812 (1A)
+        \item 12V to 5V DC using LM7805 (1A)
+        \item 12V to 3.3V using LM317 adjustable regulator
+      \end{itemize}
+    \end{block}
+    \begin{block}{Key Components}
+      \begin{itemize}
+          \small
+        \item LM7812, LM7805, LM317 voltage regulators for step-down conversion.
+        \item Capacitors for noise filtration.
+        \item Resistors to set voltages for LM317 as 3.146V DC (50uA).
+      \end{itemize}
+    \end{block}
+  \end{minipage}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Schematic Design - Brake Signal Transmitter  }
+  \begin{minipage}{0.6\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth]{assets/electronic/bst_schem.jpg}
+    \end{figure}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.375\textwidth}
+    \begin{itemize}
+      \begin{block}{(12V <50mA)}
+        \item Reads PWM signals and wake-up signals
+        \item Includes resistors and capacitors for signal filtering
+      \end{block}
+    \end{itemize}
+  \end{minipage}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Peripheral Schematic Design}
+  \begin{block}{Overview}
+    \begin{itemize}
+      \item The schematic illustrates the design for connecting the devices under test (DUTs) to the STM32-DK2 microcontroller.
+    \end{itemize}
+  \end{block}
+  \begin{block}{Key Design Elements}
+    \begin{itemize}
+      \item Signal Conditioning Circuits
+      \item Resistors for voltage scaling, current limiting, and signal stabilization.
+      \item Diodes to protect against voltage spikes and reverse polarity.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Continuous Wear Sensor (5V/<25mA)}
+  \begin{minipage}{0.65\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth]{assets/electronic/wear_schem.jpg}
+    \end{figure}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.3\textwidth}
+    \begin{block}{Key Points}
+      \begin{itemize}
+        \item Captures analog voltage  to monitor brake wear.
+        \item Uses voltage dividers for safe microcontroller input levels.
+      \end{itemize}
+    \end{block}
+  \end{minipage}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Pressure Sensor (12V <15ma)}
+  \begin{minipage}{0.65\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth]{assets/electronic/pressure_schem.jpg}
+    \end{figure}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.3\textwidth}
+    \begin{block}{Key Points}
+      \begin{itemize}
+        \item Reads analog signals proportional to pressure.
+        \item Includes voltage dividers for safe microcontroller input levels.
+        \item Uses capacitors to stabilize the output.
+      \end{itemize}
+    \end{block}
+  \end{minipage}
+\end{frame}
+
+\begin{frame}
+  \frametitle{String Potentiometer  (12V/<20mA)}
+  \begin{minipage}{0.65\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth]{assets/electronic/string_pcb.jpg}
+    \end{figure}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.3\textwidth}
+    \begin{block}{Key Points}
+      \begin{itemize}
+        \item Converts displacement into proportional analog voltage.
+        \item Includes resistors as voltage dividers for scaling and conditioning.
+      \end{itemize}
+    \end{block}
+  \end{minipage}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Printed Circuit Board Design}
+  \begin{minipage}{0.3\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth]{assets/electronic/pwrsupply_pcb.jpg}
+    \end{figure}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.675\textwidth}
+    \begin{block}{Overview}
+      \begin{itemize}
+          \small
+        \item The power supply PCB converts the 12V DC input from the DC jack into regulated output voltages for the system.
+          \begin{itemize}
+              \tiny
+            \item  12V DC
+            \item 5V DC
+            \item 3.3V DC
+          \end{itemize}
+        \item It is designed based on the schematic with components such as voltage regulators (LM7812, LM7805, LM317), capacitors, and resistors.
+      \end{itemize}
+    \end{block}
+    \begin{block}{Key Components}
+      \begin{itemize}
+          \footnotesize
+        \item DC Jack (J1): Connects the input 12V DC power supply to the board.
+        \item Output Pins:
+          \begin{itemize}
+              \tiny
+            \item J2/J3: Provides 12V DC output.
+            \item J4/J5: Provides 5V DC output.
+            \item J6/J7: Provides 3.3V DC output.
+          \end{itemize}
+        \item Voltage Regulators
+          \begin{itemize}
+              \tiny
+            \item Step-down conversion for different voltage levels.
+            \item Smooth and stable output.
+          \end{itemize}
+        \item Capacitors (C1-C5)
+          \begin{itemize}
+              \tiny
+            \item Ensure smooth voltage output by filtering noise and ripples.
+          \end{itemize}
+        \item Ground connections: All components are referenced to a common ground for stable operation.
+      \end{itemize}
+    \end{block}
+  \end{minipage}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Peripherals Printed Circuit Board}
+  \begin{minipage}{0.5\textwidth}
+    \begin{block}{Key Features}
+      \begin{itemize}
+          \small
+        \item Input/Power Pins:
+          \begin{itemize}
+              \footnotesize
+            \item Each DUT has a dedicated connector for input signals and a power signal.
+            \item J1: Inputs for BST (PWM1 and PWM2) | J2/J3: 12V Power Signals for BST (PWM1 and PWM2)
+            \item J8: Pressure sensor input | J9: 12V DC Power Signal
+            \item J12: Wear sensor input | J13: 5V DC Power Signal
+            \item J16: String Potentiometer input | J17: 12V DC Power signal
+          \end{itemize}
+        \item Output Pins:
+          \begin{itemize}
+              \footnotesize
+            \item Processed signals are sent to the microcontroller through the output pins.
+            \item J4/J5/J6/J7: BST processed signals
+            \item J10/J11: Pressure sensor output
+            \item J14/J15: Wear sensor output
+            \item J18/J19: String potentiometer output.
+          \end{itemize}
+        \item Signal Conditioning:
+          \begin{itemize}
+              \footnotesize
+            \item Resistors: Scale signals for safe microcontroller input.
+            \item Capacitors: Filter noise and stabilize signals.
+            \item Capacitors: Filter noise and stabilize signals.
+          \end{itemize}
+      \end{itemize}
+    \end{block}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.45\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth]{assets/electronic/peri_pcb.jpg}
+    \end{figure}
+  \end{minipage}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Fabricated PCB}
+  \begin{minipage}{0.5\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth]{assets/electronic/pcb1.jpeg}
+    \end{figure}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{.475\textwidth}
+  \begin{figure}
+    \includegraphics[width=\textwidth]{assets/electronic/pcb2.jpeg}
+  \end{figure}
+  \end{minipage}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Enclosure Design}
+  \begin{minipage}{0.475\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth]{assets/electronic/stm32_enclosure_final_test_pic1.jpg}
+      \includegraphics[width=\textwidth]{assets/electronic/stm32_enclosure_final_testpic2.jpg}
+      \caption{\it Enclosure for STM32MP157F-DK2}
+    \end{figure}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.45\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth]{assets/electronic/psperi_enclosure_final_testpic1.jpg}
+      \includegraphics[width=\textwidth]{assets/electronic/psperi_enclosure_final_testpic2.jpg}
+      \caption{\it Enclosure for PCBs}
+    \end{figure}
+  \end{minipage}
 \end{frame}
 
 %==============================================================================
 % DESIGN AND IMPLEMENTATION SECTION: Cortex-M4 Firmware
 %==============================================================================
-\subsection{Cortex-M4 Firmware to Test Devices}
+\subsection{Device Interfacing and Testing}
 \begin{frame}
   \frametitle{Firmware to Test Brake Signal Transmitter (BST)}
   \begin{block}{Purpose}
     \small{
       \begin{itemize}
         \item Developed firmware on the onboard Cortex-M4 microcontroller to validate BST
-        \item Ensures accurate detection of how hard a driver presses the brake pedal
-       %\item Ensures brake actuation is accurate to distance moved by brake pedal
+        \item Ensures brake actuation is accurate to distance moved by brake pedal
+        \item \LightBold{Key Specifications:} Output range 1 mm to 9 mm, Sensitivity 5.96\% DC/mm, Output signals PWM1 and PWM2 (S1 and S2)
        % ^suggested change
       \end{itemize}
     }
@@ -277,16 +517,80 @@
     \end{figure}
   \end{minipage}
 \end{frame}
+
 % CWS Test implementation
 \begin{frame}
-  \frametitle{Firmware to Test Continuous Wear Sensor (CWS)}
+    \frametitle{Firmware to Test Continuous Wear Sensor (CWS)}
+    \begin{block}{Purpose}
+        \small{
+            \begin{itemize}
+                \item Developed firmware on the onboard Cortex-M4 microcontroller to validate the Continuous Wear Sensor (CWS)
+                \item Ensures accurate measurement of brake pad wear levels to enhance vehicle safety
+                \item \LightBold{Key Specifications:} Output range 0.7V (18 mm or new pad) to 4.0 V (53 mm or worn pad), Sensitivity 0.08 V/mm, Voltage divider ratio 2:1
+            \end{itemize}
+        }
+    \end{block}
+    \hspace{-0.5cm}
+    \begin{minipage}{0.485\textwidth}
+        \begin{block}{Method}
+            \small{
+                \begin{enumerate}
+                    \tiny
+                    \item \LightBold{ADC Configuration:} Read direct analog voltage via ADC using DMA for efficiency and a timer trigger for consistency
+                    \item \LightBold{Wear Calculation:} Mapped the measured voltage to brake pad wear using a linear relationship and handled special conditions (e.g., new pad, worn-out pad) with specific tolerances
+                    \item \LightBold{Validation:} Compared wear values against expected values based on product specifications
+                    \item \LightBold{Results:} Error thresholds to determine pass/fail and send detailed test outcomes to the main processor for logging and user display
+                \end{enumerate}
+            }
+        \end{block}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.50\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth]{assets/specs/cws_product_specs.png}
+            \caption{\it Product Specifications for CWS}
+        \end{figure}
+        \vspace{0.2cm}
+    \end{minipage}
 \end{frame}
 
-% Pressure Sensor Test Implementation
+% PS Test implementation
 \begin{frame}
-  \frametitle{Firmware to Test Pressure Sensor}
+    \frametitle{Firmware to Test Pressure Sensor}
+    \begin{block}{Purpose}
+        \small{
+            \begin{itemize}
+                \item Developed firmware to validate Pressure Sensor readings on the Cortex-M4 microcontrooler
+                \item Ensures accurate measurement of pressure when given for reliable vehicle control system purposes
+                \item \LightBold{Key Specifications:} Output range 0.5V (0 bar) to 4.5 V (10 bar), Sensitivity 0.4 V/Bar, Voltage divider ratio 2:1
+            \end{itemize}
+        }
+    \end{block}
+    \hspace{-0.5cm}
+    \begin{minipage}{0.485\textwidth}
+        \begin{block}{Method}
+            \small{
+                \begin{enumerate}
+                    \tiny
+                    \item \LightBold{ADC Configuration:} Configured the ADC to read analog voltage from the Pressure Sensor using DMA for efficient data transfer and utilized a timer to trigger ADC conversions periodically
+                    \item \LightBold{Pressure Calculation:} Mapped the measured voltage to pressure using a linear relationship given in the product specifications with the addition of converted pressure from bar to psi
+                    \item \LightBold{Validation:} Compared calculated pressure against expected values based on product specifications with voltage tolerances to determine pass/fail status
+                    \item \LightBold{Results:} Sent detailed test outcomes to the main processor for logging and user display
+                \end{enumerate}
+            }
+        \end{block}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.50\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth]{assets/specs/adc_product_specs.png}
+            \caption{\it Product Specifications for CWS}
+        \end{figure}
+        \vspace{0.2cm}
+    \end{minipage}
 \end{frame}
-
 %==============================================================================
 % DESIGN AND IMPLEMENTATION SECTION: Embedded Linux
 %==============================================================================
@@ -411,9 +715,179 @@
   \begin{minipage}{0.465\textwidth}
     \begin{figure}
       \includegraphics[width=\textwidth]{assets/diagrams/ipc.drawio.png}
-      \caption{IPC between Linux (A7) and Microcontroller (M4)}
+      \caption{Inter-processor communication between Cortex-A7 (Linux) and Cortex-M4 (Microcontroller)}
     \end{figure}
   \end{minipage}
+\end{frame}
+
+%==============================================================================
+% DESIGN AND IMPLEMENTATION SECTION: Rust
+%==============================================================================
+\subsection{Rust}
+\begin{frame}
+  \frametitle{Rust}
+  \begin{minipage}{0.75\textwidth}
+    The Rust programming language was used to write both major \\ 
+    applications (web-based application and web server) for 2 main \\ reasons.
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.20\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth]{assets/misc/rewrite-it-in-rust.jpg}
+      \caption{\it Ferris, universally accepted mascot of the Rust Programming language}
+    \end{figure}
+
+  \end{minipage}
+  \hfill
+  \vspace{-8px}
+  \begin{block}{Memory Safety and Performance}
+    \begin{itemize}
+      \item A set of rules called \DarkBold{Ownership} enforced by compiler to prevent memory leaks
+      \item \DarkBold{Borrow checker} within the compiler prevents programs unsafe programs from compiling*
+      \item Nearly as or just as performant as C with \DarkBold{Zero Cost Abstractions}
+      \item Advocated by/used by several United States goverment agencies:
+        \begin{itemize}
+          \item \LightBold{National Security Agency (NSA)} and 
+            \LightBold{Cybersecurity and Infrastructure Security Agency (CISA)} in a paper:
+            \ul{The Case for Memory Safe Roadmaps:
+            Why Both C-Suite Executives and Technical Experts
+            Need to Take Memory Safe Coding Seriously}
+          \item \LightBold{Defense Advance Research Projects Agency} with their \LightBold{TRACTR: Translate All C To Rust} program
+          \item \LightBold{The White House} in a Press Release: \ul{Future Software Should be Memory Safe}
+        \end{itemize}
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+%==============================================================================
+% DESIGN AND IMPLEMENTATION SECTION: Web-Assembly Application
+%==============================================================================
+
+\begin{frame}
+  \frametitle{Web-Application for User Interface}
+  \begin{minipage}{0.5\textwidth}
+    \begin{block}{Web Application in WebAssembly (WASM)}
+      \begin{itemize}
+        \item WASM is a compiled, binary format executable 
+        \item Much faster than traditional Javascript programs
+        \item Using the Yew framework, written in Rust
+      \end{itemize}
+    \end{block}
+    \begin{block}{Web application Features}
+      \begin{itemize}
+        \item Shows if application is connected to associated server
+        \item Selection of different devices
+        \item Shows progress and state of test
+        \item Allows download to results in a CSV
+      \end{itemize}
+    \end{block}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.4\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth]{assets/misc/webapp.png}
+      \caption{\it Web application with dropdown selection of different devices}
+    \end{figure}
+  \end{minipage}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Custom API Web Server}
+  \begin{minipage}{0.5\textwidth}
+    \begin{block}{Web Server features}
+      \begin{itemize}
+        \item Handles \DarkBoldP{HTTP requests} from web application
+        \item Dynamically loads M4 Firmware for selected device with \DarkBoldP{remoteproc}
+        \item Polls for results by reading and writing to \DarkBoldP{/dev/ttyRPMSG0} 
+        \item Saves information from \DarkBoldP{/sys/kernel/debug/remoteproc/remoteproc0/trace0} as CSV for download
+      \end{itemize}
+    \end{block}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.4\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth]{assets/misc/server1.png}
+      \includegraphics[width=\textwidth]{assets/misc/server2.png}
+      \caption{\it Console logging of server application}
+    \end{figure}
+  \end{minipage}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Software Architecture}
+  \begin{figure}
+    \includegraphics[width=\textwidth]{assets/diagrams/software_stack.drawio.png}
+  \end{figure}
+\end{frame}
+
+\section{Verifcation}
+\begin{frame}
+  \begin{block}{Link to video demonstration}
+    \href{https://dylxndy.xyz/senior-design-presentation/verification}
+    {\color{lime}{\ul{https://dylxndy.xyz/senior-design-presentation/verification}}}
+  \end{block}
+\end{frame}
+
+\section{Challenges}
+\begin{frame}
+  \frametitle{Challenges}
+  \begin{itemize}
+    \item System Clock configuration with Devicetree
+  \end{itemize}
+\end{frame}
+
+\section{Future Work}
+\begin{frame}
+  \frametitle{Future Work}
+  \begin{itemize}
+    \item Finish CAN implementation for ESCM
+      \begin{itemize}
+        \item USB to CAN used currently
+        \item enabled \DarkBoldP{CAN\_GS\_USB} module in Linux Kernel
+      \end{itemize}
+    \item Improve Web application apperance
+  \end{itemize}
+
+\end{frame}
+
+\section{Closing}
+\begin{frame}
+  \frametitle{Special Thanks}
+  \begin{itemize}
+    \item Dr. Grantner (faculty advisor)
+    \item David Florida (lab technician)
+    \item Patrick McNally (Head of Engineering at ZF Group - Auburn Hills, MI)
+    \item Davis Roman (Senior Staff Software Engineer at Rivian - Palo Alto, CA)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Thank you}
+  Any Questions?
+  \begin{block}{Project Sources}
+    \begin{itemize}
+      \item \DarkBoldP{Custom Yocto Project Layer:}
+        \begin{itemize}
+          \item \url{https://github.com/DMGDy/meta-zf-project}
+        \end{itemize}
+      \item \DarkBoldP{Custom Web Server in Rust} 
+        \begin{itemize}
+          \item \url{https://github.com/DMGDy/zf-webserver-app}
+        \end{itemize}
+      \item \DarkBoldP{Web Application in WASM}
+        \begin{itemize}
+          \item  \url{https://github.com/DMGDy/zf-yew-app}
+        \end{itemize}
+      \item \DarkBoldP{Microcontroller Firmware}
+        \begin{itemize}
+          \item \url{https://github.com/danb127/Brake-System-Tester}
+        \end{itemize}
+      \item \DarkBoldP{This Presentation}
+        \begin{itemize}
+          \item \url{https://github.com/DMGDy/ECE4820-Presentation}
+        \end{itemize}
+    \end{itemize}
+  \end{block}
 \end{frame}
 
 

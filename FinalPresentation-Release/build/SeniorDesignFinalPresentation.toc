@@ -3,7 +3,12 @@
 \beamer@subsectionintoc {1}{2}{Need for Multi-Testing Input Device}{4}{0}{1}
 \beamer@sectionintoc {2}{Design and Implementation}{5}{0}{2}
 \beamer@subsectionintoc {2}{1}{Project Specifications and Overview}{6}{0}{2}
-\beamer@subsectionintoc {2}{2}{Hardware Design}{11}{0}{2}
-\beamer@subsectionintoc {2}{3}{Cortex-M4 Firmware to Test Devices}{13}{0}{2}
-\beamer@subsectionintoc {2}{4}{Embedded Linux With Yocto Project}{17}{0}{2}
-\beamer@subsectionintoc {2}{5}{Inter-Processor Communication}{21}{0}{2}
+\beamer@subsectionintoc {2}{2}{Hardware Design}{12}{0}{2}
+\beamer@subsectionintoc {2}{3}{Device Interfacing and Testing}{23}{0}{2}
+\beamer@subsectionintoc {2}{4}{Embedded Linux With Yocto Project}{27}{0}{2}
+\beamer@subsectionintoc {2}{5}{Inter-Processor Communication}{31}{0}{2}
+\beamer@subsectionintoc {2}{6}{Rust}{33}{0}{2}
+\beamer@sectionintoc {3}{Verifcation}{38}{0}{3}
+\beamer@sectionintoc {4}{Challenges}{40}{0}{4}
+\beamer@sectionintoc {5}{Future Work}{42}{0}{5}
+\beamer@sectionintoc {6}{Closing}{44}{0}{6}
