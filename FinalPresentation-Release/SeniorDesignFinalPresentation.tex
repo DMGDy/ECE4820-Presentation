@@ -97,12 +97,13 @@
   \end{block}
 \end{frame}
 
+
 \subsection{Need for Multi-Testing Input Device}
 \begin{frame}
     \frametitle{Need for Multi-Testing Input Device}
     \begin{block}{Project Drivers}
         \begin{itemize}
-            \item BST implementation in Daimler's new platform drive urgent need
+            \item Brake Signal Transmitter implementation in Daimler's new platform drive urgent need
             \item Current testing methods are too time-consuming for production volumes
             \item Need for quick validation of warranty claims
             \item Opportunity to expand test capabilities to other electronic components
@@ -231,6 +232,22 @@
 %==============================================================================
 % DESIGN AND IMPLEMENTATION SECTION: Hardware Design
 %==============================================================================
+\begin{frame}
+  \frametitle{Peripheral Schematic Design}
+  \begin{block}{Overview}
+    \begin{itemize}
+      \item The schematic illustrates the design for connecting the devices under test (DUTs) to the STM32-DK2 microcontroller.
+    \end{itemize}
+  \end{block}
+  \begin{block}{Key Design Elements}
+    \begin{itemize}
+      \item Signal Conditioning Circuits
+      \item Resistors for voltage scaling, current limiting, and signal stabilization.
+      \item Diodes to protect against voltage spikes and reverse polarity.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
 \subsection{Hardware Design}
 \begin{frame}
   \frametitle{Power Supply Schematic Design}
@@ -277,22 +294,6 @@
       \end{block}
     \end{itemize}
   \end{minipage}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Peripheral Schematic Design}
-  \begin{block}{Overview}
-    \begin{itemize}
-      \item The schematic illustrates the design for connecting the devices under test (DUTs) to the STM32-DK2 microcontroller.
-    \end{itemize}
-  \end{block}
-  \begin{block}{Key Design Elements}
-    \begin{itemize}
-      \item Signal Conditioning Circuits
-      \item Resistors for voltage scaling, current limiting, and signal stabilization.
-      \item Diodes to protect against voltage spikes and reverse polarity.
-    \end{itemize}
-  \end{block}
 \end{frame}
 
 \begin{frame}
@@ -595,6 +596,13 @@
 % DESIGN AND IMPLEMENTATION SECTION: Embedded Linux
 %==============================================================================
 \subsection{Embedded Linux With Yocto Project}
+
+% Consolidation slide to summarize the next two slides
+
+\begin{frame}
+  \frametitle{}
+\end{frame}
+
 \begin{frame}
   \frametitle{Embedded Linux}
   \begin{figure}
