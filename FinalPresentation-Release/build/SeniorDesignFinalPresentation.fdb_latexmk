@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1732954835.81945 "SeniorDesignFinalPresentation.tex" "build/SeniorDesignFinalPresentation.pdf" "SeniorDesignFinalPresentation" 1732954847.53107 0
+["pdflatex"] 1732955185.35412 "SeniorDesignFinalPresentation.tex" "build/SeniorDesignFinalPresentation.pdf" "SeniorDesignFinalPresentation" 1732955196.77297 0
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1 2971 def0b6c1f0b107b3b936def894055589 ""
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc" 1 3021 665788e9679767ade2a71155215d25e0 ""
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/fonts/map/fontname/texfonts.map" 1 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -225,7 +225,7 @@
   "/nix/store/xqizzd8x3y956ayqk8f4xsqab0r12rix-texlive-2023-env/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1 8221929 92206ec65258aaf86dd4f98625a3b0af ""
   "/nix/store/xqizzd8x3y956ayqk8f4xsqab0r12rix-texlive-2023-env/share/texmf-var/web2c/texmf.cnf" 1 42643 7275a29cffb4534f32165dc2707737d7 ""
   "SeniorDesignFinalPresentation.tex" 1732954834.70865 34548 e5e932bdeb73361efe5e5281ef3f515c ""
-  "assets/WMU_Logo.png" 1732559282.89322 262283 b185919525209cbd4ffc10799bcf9435 ""
+  "assets/WMU_Logo.png" 1732955166.01619 11441 64ec1c383668f1f8fdeeed8c56ce876e ""
   "assets/diagrams/block_diagram.drawio.png" 1732953973.68084 294663 acb0d6c89e51f736dd741b8f34f89460 ""
   "assets/diagrams/budget.png" 1732298089.93834 445582 a4c65f1cb81507fd728b82cde95ce320 ""
   "assets/diagrams/embedded_linux.png" 1732001621.46757 134875 dfcfb20ec4900a0ea90d8d81b7698b58 ""
@@ -258,10 +258,10 @@
   "assets/specs/cws_product_specs.png" 1732307400.36382 42276 55f442571f2797dbcbdb0fe5671e36d7 ""
   "assets/zf.png" 1731949788.91688 51906 8ced17a084bf849ab1716367d499d4a1 ""
   "beamerthemeDark.sty" 1732946645.37422 1582 b3c07a3813d7f7293ae22535a11d23f3 ""
-  "build/SeniorDesignFinalPresentation.aux" 1732954847.3934 11384 67370b3c8746954b0d956f57dfda0d61 "pdflatex"
-  "build/SeniorDesignFinalPresentation.nav" 1732954847.3944 7530 d69e5c7ce052a3df6f4fe050be21e9e2 "pdflatex"
-  "build/SeniorDesignFinalPresentation.out" 1732954847.3944 2369 3e3da4f3a9d5d0d1e3b24241d4ec6c0e "pdflatex"
-  "build/SeniorDesignFinalPresentation.toc" 1732954847.3944 937 da9e7671634fddf030052b071ed96759 "pdflatex"
+  "build/SeniorDesignFinalPresentation.aux" 1732955196.63859 11384 67370b3c8746954b0d956f57dfda0d61 "pdflatex"
+  "build/SeniorDesignFinalPresentation.nav" 1732955196.63959 7530 d69e5c7ce052a3df6f4fe050be21e9e2 "pdflatex"
+  "build/SeniorDesignFinalPresentation.out" 1732955196.63959 2369 3e3da4f3a9d5d0d1e3b24241d4ec6c0e "pdflatex"
+  "build/SeniorDesignFinalPresentation.toc" 1732955196.63959 937 da9e7671634fddf030052b071ed96759 "pdflatex"
   (generated)
   "build/SeniorDesignFinalPresentation.aux"
   "build/SeniorDesignFinalPresentation.log"
