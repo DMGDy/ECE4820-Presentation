@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1732955185.35412 "SeniorDesignFinalPresentation.tex" "build/SeniorDesignFinalPresentation.pdf" "SeniorDesignFinalPresentation" 1732955196.77297 0
+["pdflatex"] 1732974846.84788 "SeniorDesignFinalPresentation.tex" "build/SeniorDesignFinalPresentation.pdf" "SeniorDesignFinalPresentation" 1732974858.70648 0
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1 2971 def0b6c1f0b107b3b936def894055589 ""
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc" 1 3021 665788e9679767ade2a71155215d25e0 ""
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/fonts/map/fontname/texfonts.map" 1 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -224,7 +224,7 @@
   "/nix/store/xqizzd8x3y956ayqk8f4xsqab0r12rix-texlive-2023-env/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1 5467731 e55882290b9b69b8d428a6d960890ab9 ""
   "/nix/store/xqizzd8x3y956ayqk8f4xsqab0r12rix-texlive-2023-env/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1 8221929 92206ec65258aaf86dd4f98625a3b0af ""
   "/nix/store/xqizzd8x3y956ayqk8f4xsqab0r12rix-texlive-2023-env/share/texmf-var/web2c/texmf.cnf" 1 42643 7275a29cffb4534f32165dc2707737d7 ""
-  "SeniorDesignFinalPresentation.tex" 1732954834.70865 34548 e5e932bdeb73361efe5e5281ef3f515c ""
+  "SeniorDesignFinalPresentation.tex" 1732974845.52891 36698 b67b671a091f0f69779cbff2d30dbac2 ""
   "assets/WMU_Logo.png" 1732955166.01619 11441 64ec1c383668f1f8fdeeed8c56ce876e ""
   "assets/diagrams/block_diagram.drawio.png" 1732953973.68084 294663 acb0d6c89e51f736dd741b8f34f89460 ""
   "assets/diagrams/budget.png" 1732298089.93834 445582 a4c65f1cb81507fd728b82cde95ce320 ""
@@ -248,6 +248,7 @@
   "assets/electronic/stm32_enclosure_final_testpic2.jpg" 1732306127.1763 99534 eebe4ce3f95d8689496638d36903ce83 ""
   "assets/electronic/string_pcb.jpg" 1732306127.1763 26737 38844e82a30cbaddb2cbfc11378783f2 ""
   "assets/electronic/wear_schem.jpg" 1732306127.1763 26679 2f2d96813ea114e022e3beafc759db20 ""
+  "assets/misc/abs-tester.png" 1732974628.80708 500946 37f1b930ba6504baab7f5e3d35da9ef7 ""
   "assets/misc/rewrite-it-in-rust.jpg" 1732245094.17459 23300 4e5d3cd3e36a81fb3e7273236c79b22c ""
   "assets/misc/server1.png" 1732302286.96789 158733 06b1a247db9d52584d304b716d38beb9 ""
   "assets/misc/server2.png" 1732302820.82531 438411 c9dd3688a37fa63c001ea536aee28f2d ""
@@ -258,10 +259,10 @@
   "assets/specs/cws_product_specs.png" 1732307400.36382 42276 55f442571f2797dbcbdb0fe5671e36d7 ""
   "assets/zf.png" 1731949788.91688 51906 8ced17a084bf849ab1716367d499d4a1 ""
   "beamerthemeDark.sty" 1732946645.37422 1582 b3c07a3813d7f7293ae22535a11d23f3 ""
-  "build/SeniorDesignFinalPresentation.aux" 1732955196.63859 11384 67370b3c8746954b0d956f57dfda0d61 "pdflatex"
-  "build/SeniorDesignFinalPresentation.nav" 1732955196.63959 7530 d69e5c7ce052a3df6f4fe050be21e9e2 "pdflatex"
-  "build/SeniorDesignFinalPresentation.out" 1732955196.63959 2369 3e3da4f3a9d5d0d1e3b24241d4ec6c0e "pdflatex"
-  "build/SeniorDesignFinalPresentation.toc" 1732955196.63959 937 da9e7671634fddf030052b071ed96759 "pdflatex"
+  "build/SeniorDesignFinalPresentation.aux" 1732974858.56334 11798 5fa6d2beadb4277d6694958e8db1bd7a "pdflatex"
+  "build/SeniorDesignFinalPresentation.nav" 1732974858.56434 7782 6ba731b77043ff75983dc77e07e5d0b1 "pdflatex"
+  "build/SeniorDesignFinalPresentation.out" 1732974858.56434 2583 8eb9d2716a34ae541d591ed57bc9bdbf "pdflatex"
+  "build/SeniorDesignFinalPresentation.toc" 1732974858.56434 1009 40733f6277c6eb7ec333541a2fdb22b9 "pdflatex"
   (generated)
   "build/SeniorDesignFinalPresentation.aux"
   "build/SeniorDesignFinalPresentation.log"

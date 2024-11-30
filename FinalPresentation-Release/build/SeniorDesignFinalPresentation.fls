@@ -453,6 +453,11 @@ INPUT ./assets/misc/zf-office.jpg
 INPUT ./assets/misc/zf-office.jpg
 INPUT /nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/fonts/vf/adobe/sourcesanspro/SourceSansPro-It-tlf-t1.vf
 INPUT /nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-It-tlf-t1--base.tfm
+INPUT ./assets/misc/abs-tester.png
+INPUT ./assets/misc/abs-tester.png
+INPUT ./assets/misc/abs-tester.png
+INPUT ./assets/misc/abs-tester.png
+INPUT ./assets/misc/abs-tester.png
 INPUT /nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Bold-tlf-t1.tfm
 INPUT /nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/fonts/vf/adobe/sourcesanspro/SourceSansPro-Bold-tlf-t1.vf
 INPUT /nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Bold-tlf-t1--base.tfm

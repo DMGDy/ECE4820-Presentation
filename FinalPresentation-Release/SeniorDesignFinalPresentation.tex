@@ -65,7 +65,7 @@
 \begin{frame}
   \frametitle{ZF}
   \begin{minipage}{0.45\textwidth}
-    \begin{block}{What is ZF?}
+    \begin{block}{Who is ZF?}
       \begin{itemize}
           \small {
             \item Global technology company and Tier 1 automotive supplier
@@ -73,6 +73,15 @@
             \item Partners with major OEMs: Daimler, Chrysler, Tesla, Waymo(Google), etc.
             \item A leading innovator in commercial vehicle technology
           }
+      \end{itemize}
+    \end{block}
+    \begin{block}{North American Headquarters}
+      \begin{itemize}
+          \small {
+            \item Project based at ZF Group's North American headquarters in Auburn Hills, MI
+            \item Specializes in commercial vehicle solutions
+            \item This facility is also home to the Claims Investigation Center
+            }
       \end{itemize}
     \end{block}
   \end{minipage}
@@ -86,24 +95,62 @@
   \end{minipage}
 \end{frame}
 
+\subsection{Claims Investigation Committee}
+\begin{frame}
+  \frametitle{Claims Investigation Committee}
+  \begin{block}{What is the Claims Investigation Center?}
+      \begin{itemize}
+          \small {
+            \item Specialized team focused on testing and initial investigation of field failure parts for commercial vehicles 
+            \item Identifies new field failures and determine areas for product improvement
+            \item Works closely with Technical Call Centers, Field Quality, and Warranty teams
+            \item Ensures readiness to test and analyze new product field returns at launch  
+          }
+      \end{itemize}
+  \end{block}
+
+
+  \begin{block}{CIC's Role in Our Project}
+    \begin{itemize}
+        \small {
+          \item Requires enhanced testing capabilites for new products
+          \item Our project aims to develop a device to streamline testing and data collection
+          \item Helps the CIC efficiently validate warranty claims and analyze field returns
+          \item Supports the CIC's mission to improve product quality and customer satisfaction
+          }
+    \end{itemize}
+  \end{block}
+  \end{frame}
+
 \subsection{Project Motivation}
 \begin{frame}
     \frametitle{Motivation for the Project}
+    \begin{minipage}{0.475\textwidth}
     \begin{block}{Challenges with Current Testing Methods}
         \begin{itemize}
-            \item Current testing methods are time-consuming and labor-intensive
-            \item Manual testing is prone to more human error
-            \item Lack of standardized equipment for multiple devices
-            \item Difficulty in rapid validation of warranty claims
+            \small
+            \item Testing on current brake system platform (mBSP) was built and industrialized specifically for that platform
+            \item Long lead time and significant cost to release and document
+            \item New platform components are not compatible with the current tester
+            \item Current tester is not capable of testing in prototype phase
         \end{itemize}
     \end{block}
     \begin{block}{Need for Improvement}
+      \small
         \begin{itemize}
-            \item BST implementation in Daimler's new platform intensifies urgency
+          \item The Brake Signal Transmitter's (BST) implementation in Daimler's new platform intensifies urgency
             \item High production volumes require efficient testing methods 
             \item Expanding product line increases testing complexity
         \end{itemize}
     \end{block}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.475\textwidth}
+        \begin{figure}
+          \includegraphics[width=\textwidth]{assets/misc/abs-tester.png}
+          \caption{\it Current brake component system tester}
+        \end{figure}
+    \end{minipage}
 \end{frame}
 
 
@@ -113,10 +160,13 @@
     \begin{block}{Addressed Challenges}
         \begin{itemize}
             \item Provides a unified testing platform for multiple devices
+            \item Flexible and agile to adapt to new product lines
+            \item Allows for prototype testing and validation
             \item Automates data collection and analysis to reduce time and errors
             \item Increases testing speed and accuracy
             \item Simplifies validation process for warranty claims
             \item Enhances capability to analyze field returns efficiently
+            \item Cost-effective solution
         \end{itemize}
     \end{block}
 \end{frame}
@@ -148,7 +198,6 @@
     \end{enumerate}
   \end{block}
 \end{frame}
-
 
 %==============================================================================
 % DESIGN AND IMPLEMENTATION SECTION: Project Solution and Overview
