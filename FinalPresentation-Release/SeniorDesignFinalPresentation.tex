@@ -1,4 +1,4 @@
-\documentclass[8pt,compress]{beamer}
+\documentclass[8pt,compress,aspectratio=169]{beamer}
 \usepackage{multicol}
 \usepackage{graphics}
 %\usepackage{cascadia-code}
@@ -57,6 +57,7 @@
   \end{frame}
 }
 \section{Introduction}
+
 %==============================================================================
 % INTRODUCTION SECTION
 %==============================================================================
@@ -134,10 +135,10 @@
   \end{block}
 \end{frame}
 
+
 %==============================================================================
 % DESIGN AND IMPLEMENTATION SECTION: Project Specifications and Overview
 %==============================================================================
-
 \section{Design and Implementation}
 \subsection{Project Specifications and Overview}
 
@@ -170,7 +171,7 @@
         \setcounter{enumi}{1}
       \item \DarkBold{Physical Components and Hardware}
         \begin{enumerate}
-          \large
+            \large
           \item Printed Circuit Board (PCB) for interfacing with DUT
           \item PCB for scaling and managing power for the DUT and to the microcontroller
           \item Enclosure for PCBs and \LightBold{STM32MP157F-DK2} board
@@ -203,7 +204,7 @@
   \frametitle{Comprehensive System Block Diagram}
   \includegraphics[width=0.90\textwidth]{assets/diagrams/block_diagram.drawio.png}
 \end{frame}
-
+ 
 %==============================================================================
 % DESIGN AND IMPLEMENTATION SECTION: Gantt Chart
 %==============================================================================
@@ -211,6 +212,7 @@
   \frametitle{Gantt Chart}
   \includegraphics[width=0.875\textwidth]{assets/diagrams/gantt.png}
 \end{frame}
+
 %==============================================================================
 % DESIGN AND IMPLEMENTATION SECTION: Budget Projection
 %==============================================================================
@@ -280,34 +282,29 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Peripheral Schematic Design}
-  \begin{block}{Overview}
-    \begin{itemize}
-      \item The schematic illustrates the design for connecting the devices under test (DUTs) to the STM32-DK2 microcontroller.
-    \end{itemize}
-  \end{block}
-  \begin{block}{Key Design Elements}
-    \begin{itemize}
-      \item Signal Conditioning Circuits
-      \item Resistors for voltage scaling, current limiting, and signal stabilization.
-      \item Diodes to protect against voltage spikes and reverse polarity.
-    \end{itemize}
-  \end{block}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Continuous Wear Sensor (5V/<25mA)}
-  \begin{minipage}{0.65\textwidth}
+  \frametitle{Peripheral Interface Schematic Diagram }
+  \begin{minipage}{0.495\textwidth}
     \begin{figure}
       \includegraphics[width=\textwidth]{assets/electronic/wear_schem.jpg}
+      \caption{Continuous Wear Sensor Interface Schematic}
+    \end{figure}
+    \begin{figure}
+      \includegraphics[width=\textwidth]{assets/electronic/pressure_schem.jpg}
+      \caption{Pressure Sensor Interface Schematic}
     \end{figure}
   \end{minipage}
   \hfill
-  \begin{minipage}{0.3\textwidth}
+  \begin{minipage}{0.49\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth]{assets/electronic/string_pcb.jpg}
+      \caption{String Potentiometer Interface Schematic}
+    \end{figure}
+
     \begin{block}{Key Points}
       \begin{itemize}
-        \item Captures analog voltage  to monitor brake wear.
+        \item Captures analog voltage signals to monitor brake wear and pressure sensor and displacement on the string potentiometer.
         \item Uses voltage dividers for safe microcontroller input levels.
+        \item Uses capacitors to stabilize the output.
       \end{itemize}
     \end{block}
   \end{minipage}
@@ -748,12 +745,9 @@
       \item Advocated by/used by several United States goverment agencies:
         \begin{itemize}
           \item \LightBold{National Security Agency (NSA)} and 
-            \LightBold{Cybersecurity and Infrastructure Security Agency (CISA)} in a paper:
-            \ul{The Case for Memory Safe Roadmaps:
-            Why Both C-Suite Executives and Technical Experts
-            Need to Take Memory Safe Coding Seriously}
-          \item \LightBold{Defense Advance Research Projects Agency} with their \LightBold{TRACTR: Translate All C To Rust} program
-          \item \LightBold{The White House} in a Press Release: \ul{Future Software Should be Memory Safe}
+            \LightBold{Cybersecurity and Infrastructure Security Agency (CISA)}
+          \item \LightBold{Defense Advance Research Projects Agency} 
+          \item \LightBold{The White House}
         \end{itemize}
     \end{itemize}
   \end{block}
