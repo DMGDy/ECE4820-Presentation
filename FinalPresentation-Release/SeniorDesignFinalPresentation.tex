@@ -84,32 +84,46 @@
       \textit{ZF Group Office in Auburn Hills, MI}}
     \end{figure}
   \end{minipage}
-  \begin{block}{Project Background}
-    \begin{itemize}
-        \item Claims Investigation Committee (CIC) required enhanced testing capabilities
-        \item Focus on key component: Brake Signal Transmitter (BST)
-        \item BST critical for highest volume commercial vehicle platform in North America (Daimler)
-        \begin{itemize}
-            \item Daimler Truck AG - World's largest commercial vehicle manufacturer
-            \item Previous parent company of Mercedez Benz before splitting in 2021
-        \end{itemize}
-        \item Need for rapid, accurate analysis of field returns
-    \end{itemize}
-  \end{block}
 \end{frame}
 
-\subsection{Need for Multi-Testing Input Device}
+\subsection{Project Motivation}
 \begin{frame}
-    \frametitle{Need for Multi-Testing Input Device}
-    \begin{block}{Project Drivers}
+    \frametitle{Motivation for the Project}
+    \begin{block}{Challenges with Current Testing Methods}
         \begin{itemize}
-            \item BST implementation in Daimler's new platform drive urgent need
-            \item Current testing methods are too time-consuming for production volumes
-            \item Need for quick validation of warranty claims
-            \item Opportunity to expand test capabilities to other electronic components
+            \item Current testing methods are time-consuming and labor-intensive
+            \item Manual testing is prone to more human error
+            \item Lack of standardized equipment for multiple devices
+            \item Difficulty in rapid validation of warranty claims
         \end{itemize}
     \end{block}
-    %\begin{block}{Key Components Under Test}
+    \begin{block}{Need for Improvement}
+        \begin{itemize}
+            \item BST implementation in Daimler's new platform intensifies urgency
+            \item High production volumes require efficient testing methods 
+            \item Expanding product line increases testing complexity
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+
+\subsection{Our Solution}
+\begin{frame}
+    \frametitle{Multi-Testing Input Device}
+    \begin{block}{Addressed Challenges}
+        \begin{itemize}
+            \item Provides a unified testing platform for multiple devices
+            \item Automates data collection and analysis to reduce time and errors
+            \item Increases testing speed and accuracy
+            \item Simplifies validation process for warranty claims
+            \item Enhances capability to analyze field returns efficiently
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\subsection{Key Devices Under Test}
+\begin{frame}
+    \frametitle{Devices Our Solution Supports}
     \begin{block}{Key Devices Under Test (DUTs)}
     \begin{enumerate}
         \item {\DarkBold{Brake Signal Transmitter (BST)}}
@@ -137,14 +151,14 @@
 
 
 %==============================================================================
-% DESIGN AND IMPLEMENTATION SECTION: Project Specifications and Overview
+% DESIGN AND IMPLEMENTATION SECTION: Project Solution and Overview
 %==============================================================================
 \section{Design and Implementation}
-\subsection{Project Specifications and Overview}
+\subsection{Project Solution and Overview}
 
 \begin{frame}
-  \frametitle{Project Specifications}
-  \includegraphics[width=0.75\textwidth]{assets/diagrams/hardware.png}
+  \frametitle{Project Solution}
+  \includegraphics[width=0.5\textwidth]{assets/diagrams/hardware.png}
   \begin{block}{What this project aims to accomplish:}
     \begin{enumerate}
       \item {\DarkBold{Device Interfacing}}
@@ -158,20 +172,8 @@
               \item CAN frames
             \end{itemize}
         \end{enumerate}
-    \end{enumerate}
-  \end{block}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Project Specifications (cont.)}
-  \large
-  \begin{block}{Project Specifications}
-    \large
-    \begin{enumerate}
-        \setcounter{enumi}{1}
       \item \DarkBold{Physical Components and Hardware}
         \begin{enumerate}
-            \large
           \item Printed Circuit Board (PCB) for interfacing with DUT
           \item PCB for scaling and managing power for the DUT and to the microcontroller
           \item Enclosure for PCBs and \LightBold{STM32MP157F-DK2} board
@@ -181,7 +183,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Project Specifications (cont.)}
+  \frametitle{Project Solution (cont.)}
   \begin{block}{What this project aims to accomplish:}
     \begin{enumerate}
         \setcounter{enumi}{2}
@@ -202,7 +204,7 @@
 
 \begin{frame}
   \frametitle{Comprehensive System Block Diagram}
-  \includegraphics[width=0.90\textwidth]{assets/diagrams/block_diagram.drawio.png}
+  \includegraphics[height=0.85\paperheight]{assets/diagrams/block_diagram.drawio.png}
 \end{frame}
  
 %==============================================================================
@@ -210,7 +212,7 @@
 %==============================================================================
 \begin{frame}
   \frametitle{Gantt Chart}
-  \includegraphics[width=0.875\textwidth]{assets/diagrams/gantt.png}
+  \includegraphics[height=0.85\paperheight]{assets/diagrams/gantt.png}
 \end{frame}
 
 %==============================================================================
@@ -219,7 +221,7 @@
 \begin{frame}
   \frametitle{Budget Projection}
   \vspace{-.2025cm}
-  \includegraphics[height=0.675\textwidth]{assets/diagrams/budget.png}
+  \includegraphics[height=0.85\paperheight]{assets/diagrams/budget.png}
 \end{frame}
 
 \AtBeginSubsection[]
@@ -300,6 +302,7 @@
       \caption{String Potentiometer Interface Schematic}
     \end{figure}
 
+    \vspace{-0.5cm}
     \begin{block}{Key Points}
       \begin{itemize}
         \item Captures analog voltage signals to monitor brake wear and pressure sensor and displacement on the string potentiometer.
@@ -443,7 +446,7 @@
   \frametitle{Fabricated PCB}
   \begin{minipage}{0.5\textwidth}
     \begin{figure}
-      \includegraphics[width=\textwidth]{assets/electronic/pcb1.jpeg}
+      \includegraphics[width=0.9\textwidth]{assets/electronic/pcb1.jpeg}
     \end{figure}
   \end{minipage}
   \hfill
@@ -458,16 +461,16 @@
   \frametitle{Enclosure Design}
   \begin{minipage}{0.475\textwidth}
     \begin{figure}
-      \includegraphics[width=\textwidth]{assets/electronic/stm32_enclosure_final_test_pic1.jpg}
-      \includegraphics[width=\textwidth]{assets/electronic/stm32_enclosure_final_testpic2.jpg}
+      \includegraphics[width=0.95\textwidth]{assets/electronic/stm32_enclosure_final_test_pic1.jpg}
+      \includegraphics[width=0.95\textwidth]{assets/electronic/stm32_enclosure_final_testpic2.jpg}
       \caption{\it Enclosure for STM32MP157F-DK2}
     \end{figure}
   \end{minipage}
   \hfill
   \begin{minipage}{0.45\textwidth}
     \begin{figure}
-      \includegraphics[width=\textwidth]{assets/electronic/psperi_enclosure_final_testpic1.jpg}
-      \includegraphics[width=\textwidth]{assets/electronic/psperi_enclosure_final_testpic2.jpg}
+      \includegraphics[width=0.95\textwidth]{assets/electronic/psperi_enclosure_final_testpic1.jpg}
+      \includegraphics[width=0.95\textwidth]{assets/electronic/psperi_enclosure_final_testpic2.jpg}
       \caption{\it Enclosure for PCBs}
     \end{figure}
   \end{minipage}
@@ -485,7 +488,6 @@
         \item Developed firmware on the onboard Cortex-M4 microcontroller to validate BST
         \item Ensures brake actuation is accurate to distance moved by brake pedal
         \item \LightBold{Key Specifications:} Output range 1 mm to 9 mm, Sensitivity 5.96\% DC/mm, Output signals PWM1 and PWM2 (S1 and S2)
-       % ^suggested change
       \end{itemize}
     }
   \end{block}
@@ -496,9 +498,7 @@
         \begin{itemize}
           \item \LightBold{Input Capture:} Timers captures read two PWM signals from the BST
           \item \LightBold{ADC Reading:}Optional string potentiometer for direct analog voltage measurements via ADC 
-            %^ADC already defined in project specification, "converter" after ADC is redundant
           \item \LightBold{Processing:} Calculates duty cycles, frequencies, and estimated stroke via timer interrupts
-            %^changed "readings" to "interrupts"
           \item \LightBold{Validation:} Compare measurements against expected values according to product specifications to verify BST accuracy
           \item \LightBold{Results:} Sends test results to the main processor for logging and user display
         \end{itemize}
@@ -509,7 +509,7 @@
   \begin{minipage}{0.50\textwidth}
     \begin{figure}
       \centering
-      \includegraphics[width=\textwidth]{assets/specs/bst_product_specs.png}
+      \includegraphics[width=0.85\textwidth]{assets/specs/bst_product_specs.png}
       \caption{\it Product Specifications for BST}
     \end{figure}
   \end{minipage}
@@ -588,10 +588,33 @@
         \vspace{0.2cm}
     \end{minipage}
 \end{frame}
+
 %==============================================================================
 % DESIGN AND IMPLEMENTATION SECTION: Embedded Linux
 %==============================================================================
+
 \subsection{Embedded Linux With Yocto Project}
+% Consolidation slide since we need to go faster
+\begin{frame}
+  \frametitle{Embedded Linux and The Yocto Project}
+  \begin{columns}
+    \column{0.475\textwidth}
+    \begin{block}{Embedded Linux}
+      \begin{itemize}
+        \item Industry standard for embedded Operating system
+        \item Rich ecosystem of open-source tools and software
+      \end{itemize}
+    \end{block}
+    \column{0.475\textwidth}
+    \begin{block}{The Yocto Project}
+      \begin{itemize}
+        \item Collection of tools to build a custom embedded Linux distribution
+        \item Fine-grain control of every aspect of deployed image
+      \end{itemize}
+    \end{block}
+  \end{columns}
+\end{frame}
+
 \begin{frame}
   \frametitle{Embedded Linux}
   \begin{figure}
@@ -615,8 +638,8 @@
 
 \begin{frame}
   \frametitle{Using The Yocto Project to Build a Custom Distribution}
+  \begin{minipage}{0.475\textwidth}
     \begin{block}{What is the Yocto Project and why?}
-      {
         \begin{itemize}
           \item Most popular set of tools for embedded Linux Development
           \item Collection of OSS tools to make a custom Linux distribution
@@ -629,17 +652,17 @@
             \end{itemize}
           \item \LightBold{MetaData} organized in its \LightBold{Layer Model}
         \end{itemize}
-      }
     \end{block}
+  \end{minipage}
   \hfill
-    \vspace{-12px}
-    \center
+  \begin{minipage}{0.475\textwidth}
     \begin{figure}
       \center
       \includegraphics[width=180px]{assets/diagrams/yocto-environment.png}
       \caption{Source: \href{https://docs.yoctoproject.org}{https://docs.yoctoproject.org}\hspace{\textwidth}
       \it High-level diagram representing how builds work using The Yocto Project}
     \end{figure}
+  \end{minipage}
 \end{frame}
 
 \begin{frame}
@@ -754,7 +777,7 @@
 \end{frame}
 
 %==============================================================================
-% DESIGN AND IMPLEMENTATION SECTION: Web-Assembly Application
+% DESIGN AND IMPLEMENTATION SECTION: Web-Assembly Application and Server
 %==============================================================================
 
 \begin{frame}
@@ -810,7 +833,7 @@
 \begin{frame}
   \frametitle{Software Architecture}
   \begin{figure}
-    \includegraphics[width=\textwidth]{assets/diagrams/software_stack.drawio.png}
+    \includegraphics[height=0.825\paperheight]{assets/diagrams/software_stack.drawio.png}
   \end{figure}
 \end{frame}
 
@@ -827,6 +850,9 @@
   \frametitle{Challenges}
   \begin{itemize}
     \item System Clock configuration with Devicetree
+    \item Timer configuration for PWM signals
+    \item Mini-360 Buck Converter
+    \item PCB Creation
   \end{itemize}
 \end{frame}
 
