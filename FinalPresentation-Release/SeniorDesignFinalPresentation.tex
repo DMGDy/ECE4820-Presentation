@@ -207,6 +207,7 @@
 
 \begin{frame}
   \frametitle{Project Solution}
+  \centering
   \includegraphics[width=0.5\textwidth]{assets/diagrams/hardware.png}
   \begin{block}{What this project aims to accomplish:}
     \begin{enumerate}
@@ -242,7 +243,7 @@
             \large
           \item Custom embedded \textbf{Linux} distribution that will run on the onboard ARM Cortex-A7
             microprocessor on the \LightBold{STM32MP157F-DK2}
-          \item Simple user interface web-based application
+          \item Simple user interface on web-based application
           \item Custom Webserver to process information from web application to microcontroller
           \item Communicate collected information from ARM Cortex-M4 to ARM Cortex-A7
           \item Ability to download measured data, formatted as a CSV, through the web application 
@@ -253,6 +254,7 @@
 
 \begin{frame}
   \frametitle{Comprehensive System Block Diagram}
+  \centering
   \includegraphics[height=0.85\paperheight]{assets/diagrams/block_diagram.drawio.png}
 \end{frame}
  
@@ -261,6 +263,7 @@
 %==============================================================================
 \begin{frame}
   \frametitle{Gantt Chart}
+  \centering
   \includegraphics[height=0.85\paperheight]{assets/diagrams/gantt.png}
 \end{frame}
 
@@ -269,8 +272,8 @@
 %==============================================================================
 \begin{frame}
   \frametitle{Budget Projection}
-  \vspace{-.2025cm}
-  \includegraphics[height=0.85\paperheight]{assets/diagrams/budget.png}
+  \centering
+  \includegraphics[height=0.80\paperheight]{assets/diagrams/budget.png}
 \end{frame}
 
 \AtBeginSubsection[]
@@ -315,20 +318,22 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Schematic Design - Brake Signal Transmitter  }
+  \frametitle{Schematic Design - Brake Signal Transmitter}
   \begin{minipage}{0.6\textwidth}
     \begin{figure}
       \includegraphics[width=\textwidth]{assets/electronic/bst_schem.jpg}
+      \caption{Circuit schematic of Brake Signal Transmitter (BST)}
     \end{figure}
   \end{minipage}
   \hfill
   \begin{minipage}{0.375\textwidth}
-    \begin{itemize}
-      \begin{block}{(12V <50mA)}
-        \item Reads PWM signals and wake-up signals
-        \item Includes resistors and capacitors for signal filtering
-      \end{block}
-    \end{itemize}
+    \begin{block}{Key Points}
+      \begin{itemize}
+        \item Captures the output of the Brake Signal Transmitter (BST) in the form of Pulse Width Modulation (PWM) signals.
+        \item Includes resistors and capacitors for signal filtering.
+        \item Diodes protect the circuit from voltage surges and reverse polarity.
+      \end{itemize}
+    \end{block}
   \end{minipage}
 \end{frame}
 
@@ -361,49 +366,12 @@
     \end{block}
   \end{minipage}
 \end{frame}
-
-\begin{frame}
-  \frametitle{Pressure Sensor (12V <15ma)}
-  \begin{minipage}{0.65\textwidth}
-    \begin{figure}
-      \includegraphics[width=\textwidth]{assets/electronic/pressure_schem.jpg}
-    \end{figure}
-  \end{minipage}
-  \hfill
-  \begin{minipage}{0.3\textwidth}
-    \begin{block}{Key Points}
-      \begin{itemize}
-        \item Reads analog signals proportional to pressure.
-        \item Includes voltage dividers for safe microcontroller input levels.
-        \item Uses capacitors to stabilize the output.
-      \end{itemize}
-    \end{block}
-  \end{minipage}
-\end{frame}
-
-\begin{frame}
-  \frametitle{String Potentiometer  (12V/<20mA)}
-  \begin{minipage}{0.65\textwidth}
-    \begin{figure}
-      \includegraphics[width=\textwidth]{assets/electronic/string_pcb.jpg}
-    \end{figure}
-  \end{minipage}
-  \hfill
-  \begin{minipage}{0.3\textwidth}
-    \begin{block}{Key Points}
-      \begin{itemize}
-        \item Converts displacement into proportional analog voltage.
-        \item Includes resistors as voltage dividers for scaling and conditioning.
-      \end{itemize}
-    \end{block}
-  \end{minipage}
-\end{frame}
-
 \begin{frame}
   \frametitle{Printed Circuit Board Design}
   \begin{minipage}{0.3\textwidth}
     \begin{figure}
       \includegraphics[width=\textwidth]{assets/electronic/pwrsupply_pcb.jpg}
+      \caption{PCB for Power Management}
     \end{figure}
   \end{minipage}
   \hfill
@@ -487,6 +455,7 @@
   \begin{minipage}{0.45\textwidth}
     \begin{figure}
       \includegraphics[width=\textwidth]{assets/electronic/peri_pcb.jpg}
+      \caption{PCB for connecting to peripheral device}
     \end{figure}
   \end{minipage}
 \end{frame}
@@ -496,12 +465,14 @@
   \begin{minipage}{0.5\textwidth}
     \begin{figure}
       \includegraphics[width=0.9\textwidth]{assets/electronic/pcb1.jpeg}
+      \caption{Power Management PCB}
     \end{figure}
   \end{minipage}
   \hfill
   \begin{minipage}{.475\textwidth}
   \begin{figure}
     \includegraphics[width=\textwidth]{assets/electronic/pcb2.jpeg}
+      \caption{Peripheral Interface PCB}
   \end{figure}
   \end{minipage}
 \end{frame}
@@ -886,7 +857,7 @@
   \end{figure}
 \end{frame}
 
-\section{Verifcation}
+\section{Verification}
 \begin{frame}
   \begin{block}{Link to video demonstration}
     \href{https://dylxndy.xyz/senior-design-presentation/verification}
@@ -914,7 +885,7 @@
         \item USB to CAN used currently
         \item enabled \DarkBoldP{CAN\_GS\_USB} module in Linux Kernel
       \end{itemize}
-    \item Improve Web application apperance
+    \item Improve Web application appearance
   \end{itemize}
 
 \end{frame}

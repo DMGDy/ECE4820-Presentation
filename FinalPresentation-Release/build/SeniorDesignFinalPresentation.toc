@@ -7,11 +7,11 @@
 \beamer@sectionintoc {2}{Design and Implementation}{8}{0}{2}
 \beamer@subsectionintoc {2}{1}{Project Solution and Overview}{9}{0}{2}
 \beamer@subsectionintoc {2}{2}{Hardware Design}{14}{0}{2}
-\beamer@subsectionintoc {2}{3}{Device Interfacing and Testing}{24}{0}{2}
-\beamer@subsectionintoc {2}{4}{Embedded Linux With Yocto Project}{28}{0}{2}
-\beamer@subsectionintoc {2}{5}{Inter-Processor Communication}{33}{0}{2}
-\beamer@subsectionintoc {2}{6}{Web Application and Server}{35}{0}{2}
-\beamer@sectionintoc {3}{Verifcation}{40}{0}{3}
-\beamer@sectionintoc {4}{Challenges}{42}{0}{4}
-\beamer@sectionintoc {5}{Future Work}{44}{0}{5}
-\beamer@sectionintoc {6}{Closing}{46}{0}{6}
+\beamer@subsectionintoc {2}{3}{Device Interfacing and Testing}{22}{0}{2}
+\beamer@subsectionintoc {2}{4}{Embedded Linux With Yocto Project}{26}{0}{2}
+\beamer@subsectionintoc {2}{5}{Inter-Processor Communication}{31}{0}{2}
+\beamer@subsectionintoc {2}{6}{Web Application and Server}{33}{0}{2}
+\beamer@sectionintoc {3}{Verification}{38}{0}{3}
+\beamer@sectionintoc {4}{Challenges}{40}{0}{4}
+\beamer@sectionintoc {5}{Future Work}{42}{0}{5}
+\beamer@sectionintoc {6}{Closing}{44}{0}{6}
