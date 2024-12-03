@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/nixos.org) (preloaded format=pdflatex 1980.1.1)  2 DEC 2024 17:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/nixos.org) (preloaded format=pdflatex 1980.1.1)  2 DEC 2024 23:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1217,33 +1217,33 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 ) (build/SeniorDesignFinalPresentation.aux)
 \openout1 = `SeniorDesignFinalPresentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 36.
 LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 3
-7.
+6.
 
 (/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/tex/lat
 ex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    ... okay on input line 36.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1306,65 +1306,65 @@ ex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 37.
+Package hyperref Info: Link coloring OFF on input line 36.
  (build/SeniorDesignFinalPresentation.out)
 (build/SeniorDesignFinalPresentation.out)
 \@outlinefile=\write5
 \openout5 = `SeniorDesignFinalPresentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 37.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 36.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 37.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 36.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 37.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 37.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 36.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> T1/SourceSansPro-TLF/b/n on input line
- 37.
+ 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
 (Font)                  OT1/cmr/bx/n --> T1/SourceSansPro-TLF/b/n on input line
- 37.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 37.
+ 36.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> T1/SourceSansPro-TLF/m/n on input line
- 37.
+ 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> T1/SourceSansPro-TLF/m/n on input lin
-e 37.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 37.
+e 36.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> T1/SourceSansPro-TLF/m/it on input lin
-e 37.
+e 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> T1/SourceSansPro-TLF/m/it on input li
-ne 37.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 37.
+ne 36.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 37.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 37.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 36.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
 (Font)                  T1/SourceSansPro-TLF/m/n --> T1/SourceSansPro-TLF/b/n o
-n input line 37.
+n input line 36.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  T1/SourceSansPro-TLF/m/it --> T1/SourceSansPro-TLF/b/it
- on input line 37.
+ on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 37.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
 (Font)                  T1/SourceSansPro-TLF/b/n --> T1/SourceSansPro-TLF/b/n o
-n input line 37.
+n input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  T1/SourceSansPro-TLF/m/n --> T1/SourceSansPro-TLF/b/n o
-n input line 37.
+n input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  T1/SourceSansPro-TLF/m/it --> T1/SourceSansPro-TLF/b/it
- on input line 37.
+ on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 37.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 36.
 
 (/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/tex/lat
 ex/translator/translator-basic-dictionary-English.dict
@@ -1396,41 +1396,41 @@ Package caption Info: End \AtBeginDocument code.
 
 (build/SeniorDesignFinalPresentation.nav)
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 37.
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 36.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 5.0pt on input line 37.
+(Font)              scaled to size 5.0pt on input line 36.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 56.
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 55.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 10.95pt on input line 56.
+(Font)              scaled to size 10.95pt on input line 55.
 <assets/WMU_Logo.png, id=188, 268.00125pt x 258.9675pt>
 File: assets/WMU_Logo.png Graphic file (type png)
 <use assets/WMU_Logo.png>
-Package pdftex.def Info: assets/WMU_Logo.png  used on input line 56.
+Package pdftex.def Info: assets/WMU_Logo.png  used on input line 55.
 (pdftex.def)             Requested size: 58.89093pt x 56.9055pt.
 <assets/zf.png, id=190, 1027.84pt x 1027.84pt>
 File: assets/zf.png Graphic file (type png)
 <use assets/zf.png>
-Package pdftex.def Info: assets/zf.png  used on input line 56.
+Package pdftex.def Info: assets/zf.png  used on input line 55.
 (pdftex.def)             Requested size: 56.89993pt x 56.9055pt.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 56.
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 55.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 7.0pt on input line 56.
+(Font)              scaled to size 7.0pt on input line 55.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 56.
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 55.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 56.
+(Font)              scaled to size 10.0pt on input line 55.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 56.
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 55.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 6.0pt on input line 56.
+(Font)              scaled to size 6.0pt on input line 55.
 
 (build/SeniorDesignFinalPresentation.toc)
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 65.
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 64.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 4.0pt on input line 65.
+(Font)              scaled to size 4.0pt on input line 64.
  [2
 
 {/nix/store/xqizzd8x3y956ayqk8f4xsqab0r12rix-texlive-2023-env/share/texmf-var/f
@@ -1441,25 +1441,25 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation1})
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.65 \section{Introduction}
+l.64 \section{Introduction}
                            
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.65 \section{Introduction}
+l.64 \section{Introduction}
                            
 
  <./assets/WMU_Logo.png> <./assets/zf.png>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 111
+LaTeX Font Info:    Trying to load font information for U+msa on input line 109
 .
 
 (/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/tex/lat
 ex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 111
+LaTeX Font Info:    Trying to load font information for U+msb on input line 109
 .
 
 (/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/tex/lat
@@ -1467,21 +1467,21 @@ ex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 111.
+(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 109.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
-(Font)              scaled to size 8.0pt on input line 111.
+(Font)              scaled to size 8.0pt on input line 109.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 111.
+(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 109.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
-(Font)              scaled to size 6.0pt on input line 111.
+(Font)              scaled to size 6.0pt on input line 109.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 111.
+(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 109.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
-(Font)              scaled to size 5.0pt on input line 111.
+(Font)              scaled to size 5.0pt on input line 109.
 <assets/misc/zf-office.jpg, id=419, 1365.1pt x 767.86874pt>
 File: assets/misc/zf-office.jpg Graphic file (type jpg)
 <use assets/misc/zf-office.jpg>
-Package pdftex.def Info: assets/misc/zf-office.jpg  used on input line 111.
+Package pdftex.def Info: assets/misc/zf-office.jpg  used on input line 109.
 (pdftex.def)             Requested size: 179.25114pt x 100.82236pt.
  [3
 
@@ -1491,14 +1491,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation2})
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.111 \end{frame}
+l.109 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.111 \end{frame}
+l.109 \end{frame}
                  
 
 ] [4
@@ -1509,21 +1509,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation3})
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.144   \end{frame}
+l.142   \end{frame}
                    
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.144   \end{frame}
+l.142   \end{frame}
                    
 
  <./assets/misc/zf-office.jpg>]
 <assets/misc/abs-tester.png, id=767, 1412.27625pt x 448.67625pt>
 File: assets/misc/abs-tester.png Graphic file (type png)
 <use assets/misc/abs-tester.png>
-Package pdftex.def Info: assets/misc/abs-tester.png  used on input line 195.
+Package pdftex.def Info: assets/misc/abs-tester.png  used on input line 194.
 (pdftex.def)             Requested size: 189.21326pt x 60.10997pt.
  [5
 
@@ -1533,18 +1533,18 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation4})
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.195 \end{frame}
+l.194 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
 been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.195 \end{frame}
+l.194 \end{frame}
                  
 
 ]
-Overfull \vbox (17.56383pt too high) detected at line 195
+Overfull \vbox (28.51382pt too high) detected at line 194
  []
 
 [6
@@ -1555,21 +1555,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation5})
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.223 \end{frame}
+l.222 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
 been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.223 \end{frame}
+l.222 \end{frame}
                  
 
  <./assets/misc/abs-tester.png>]
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 267.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 266.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 8.0pt on input line 267.
+(Font)              scaled to size 8.0pt on input line 266.
  [7
 
 
@@ -1578,14 +1578,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation6})
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.267 \end{frame}
+l.266 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
 been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.267 \end{frame}
+l.266 \end{frame}
                  
 
 ] (build/SeniorDesignFinalPresentation.toc) [8
@@ -1596,28 +1596,28 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation7})
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.272 \section{Design and Implementation}
+l.270 \section{Design and Implementation}
                                          
 pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has 
 been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.272 \section{Design and Implementation}
+l.270 \section{Design and Implementation}
                                          
 
 ]
 <assets/diagrams/hardware.png, id=1272, 1543.7675pt x 813.0375pt>
 File: assets/diagrams/hardware.png Graphic file (type png)
 <use assets/diagrams/hardware.png>
-Package pdftex.def Info: assets/diagrams/hardware.png  used on input line 307.
+Package pdftex.def Info: assets/diagrams/hardware.png  used on input line 305.
 (pdftex.def)             Requested size: 199.1693pt x 104.8922pt.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 307.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 305.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 7.0pt on input line 307.
+(Font)              scaled to size 7.0pt on input line 305.
 
-Overfull \vbox (8.08658pt too high) detected at line 307
+Overfull \vbox (8.08658pt too high) detected at line 305
  []
 
 [9
@@ -1628,21 +1628,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation8})
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.307 \end{frame}
+l.305 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has 
 been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.307 \end{frame}
+l.305 \end{frame}
                  
 
 ]
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 333.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 331.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 333.
+(Font)              scaled to size 10.0pt on input line 331.
  [10
 
 
@@ -1651,14 +1651,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation9})
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.333 \end{frame}
+l.331 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has 
 been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.333 \end{frame}
+l.331 \end{frame}
                  
 
  <./assets/diagrams/hardware.png>]
@@ -1666,10 +1666,10 @@ l.333 \end{frame}
 File: assets/diagrams/block_diagram.drawio.png Graphic file (type png)
 <use assets/diagrams/block_diagram.drawio.png>
 Package pdftex.def Info: assets/diagrams/block_diagram.drawio.png  used on inpu
-t line 342.
+t line 340.
 (pdftex.def)             Requested size: 286.5446pt x 217.66513pt.
 
-Overfull \vbox (9.52954pt too high) detected at line 342
+Overfull \vbox (9.52954pt too high) detected at line 340
  []
 
 [11
@@ -1680,24 +1680,24 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation10}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.342 \end{frame}
+l.340 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.342 \end{frame}
+l.340 \end{frame}
                  
 
 ]
 <assets/diagrams/gantt.png, id=1663, 2200.22pt x 1666.225pt>
 File: assets/diagrams/gantt.png Graphic file (type png)
 <use assets/diagrams/gantt.png>
-Package pdftex.def Info: assets/diagrams/gantt.png  used on input line 353.
+Package pdftex.def Info: assets/diagrams/gantt.png  used on input line 351.
 (pdftex.def)             Requested size: 287.41512pt x 217.66513pt.
 
-Overfull \vbox (9.52954pt too high) detected at line 353
+Overfull \vbox (9.52954pt too high) detected at line 351
  []
 
 [12
@@ -1708,21 +1708,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation11}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.353 \end{frame}
+l.351 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.353 \end{frame}
+l.351 \end{frame}
                  
 
  <./assets/diagrams/block_diagram.drawio.png>]
 <assets/diagrams/budget.png, id=1780, 1421.31pt x 994.71625pt>
 File: assets/diagrams/budget.png Graphic file (type png)
 <use assets/diagrams/budget.png>
-Package pdftex.def Info: assets/diagrams/budget.png  used on input line 365.
+Package pdftex.def Info: assets/diagrams/budget.png  used on input line 363.
 (pdftex.def)             Requested size: 292.71506pt x 204.86061pt.
  [13
 
@@ -1732,14 +1732,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation12}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.365 \end{frame}
+l.363 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.365 \end{frame}
+l.363 \end{frame}
                  
 
  <./assets/diagrams/gantt.png>] [14
@@ -1750,14 +1750,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation13}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.379 \end{frame}
+l.377 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.13}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.379 \end{frame}
+l.377 \end{frame}
                  
 
  <./assets/diagrams/budget.png>]
@@ -1769,14 +1769,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation14}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.392 \subsection{Hardware Design}
+l.390 \subsection{Hardware Design}
                                   
 pdfTeX warning (ext4): destination with the same identifier (name{page.14}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.392 \subsection{Hardware Design}
+l.390 \subsection{Hardware Design}
                                   
 
 ]
@@ -1834,22 +1834,22 @@ l.442 \end{frame}
 File: assets/electronic/wear_schem.jpg Graphic file (type jpg)
 <use assets/electronic/wear_schem.jpg>
 Package pdftex.def Info: assets/electronic/wear_schem.jpg  used on input line 4
-73.
+75.
 (pdftex.def)             Requested size: 197.17564pt x 86.09126pt.
 <assets/electronic/pressure_schem.jpg, id=2447, 233.37187pt x 94.85437pt>
 File: assets/electronic/pressure_schem.jpg Graphic file (type jpg)
 <use assets/electronic/pressure_schem.jpg>
 Package pdftex.def Info: assets/electronic/pressure_schem.jpg  used on input li
-ne 473.
+ne 475.
 (pdftex.def)             Requested size: 197.17564pt x 80.14606pt.
 <assets/electronic/string_pcb.jpg, id=2448, 188.20313pt x 100.87688pt>
 File: assets/electronic/string_pcb.jpg Graphic file (type jpg)
 <use assets/electronic/string_pcb.jpg>
 Package pdftex.def Info: assets/electronic/string_pcb.jpg  used on input line 4
-73.
+75.
 (pdftex.def)             Requested size: 195.1881pt x 104.62778pt.
 
-Overfull \vbox (11.10173pt too high) detected at line 473
+Overfull \vbox (11.10173pt too high) detected at line 475
  []
 
 [18
@@ -1860,14 +1860,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation17}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.473 \end{frame}
+l.475 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.17}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.473 \end{frame}
+l.475 \end{frame}
                  
 
  <./assets/electronic/bst_schem.jpg>]
@@ -1875,7 +1875,7 @@ l.473 \end{frame}
 File: assets/electronic/pwrsupply_pcb.jpg Graphic file (type jpg)
 <use assets/electronic/pwrsupply_pcb.jpg>
 Package pdftex.def Info: assets/electronic/pwrsupply_pcb.jpg  used on input lin
-e 525.
+e 531.
 (pdftex.def)             Requested size: 119.50279pt x 125.1784pt.
  [19
 
@@ -1885,14 +1885,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation18}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.525 \end{frame}
+l.531 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.18}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.525 \end{frame}
+l.531 \end{frame}
                  
 
  <./assets/electronic/wear_schem.jpg> <./assets/electronic/pressure_schem.jpg> 
@@ -1900,7 +1900,7 @@ l.525 \end{frame}
 <assets/electronic/peri_pcb.jpg, id=2729, 483.30562pt x 359.84438pt>
 File: assets/electronic/peri_pcb.jpg Graphic file (type jpg)
 <use assets/electronic/peri_pcb.jpg>
-Package pdftex.def Info: assets/electronic/peri_pcb.jpg  used on input line 570
+Package pdftex.def Info: assets/electronic/peri_pcb.jpg  used on input line 581
 .
 (pdftex.def)             Requested size: 179.25114pt x 133.45879pt.
  [20
@@ -1911,29 +1911,29 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation19}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.570 \end{frame}
+l.581 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.19}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.570 \end{frame}
+l.581 \end{frame}
                  
 
  <./assets/electronic/pwrsupply_pcb.jpg>]
 <assets/electronic/pcb1.jpeg, id=2847, 1182.4175pt x 1308.89pt>
 File: assets/electronic/pcb1.jpeg Graphic file (type jpg)
 <use assets/electronic/pcb1.jpeg>
-Package pdftex.def Info: assets/electronic/pcb1.jpeg  used on input line 588.
+Package pdftex.def Info: assets/electronic/pcb1.jpeg  used on input line 599.
 (pdftex.def)             Requested size: 179.25114pt x 198.42209pt.
 <assets/electronic/pcb2.jpeg, id=2848, 1499.6025pt x 1053.9375pt>
 File: assets/electronic/pcb2.jpeg Graphic file (type jpg)
 <use assets/electronic/pcb2.jpeg>
-Package pdftex.def Info: assets/electronic/pcb2.jpeg  used on input line 588.
+Package pdftex.def Info: assets/electronic/pcb2.jpeg  used on input line 599.
 (pdftex.def)             Requested size: 189.21326pt x 132.98015pt.
 
-Overfull \vbox (10.2865pt too high) detected at line 588
+Overfull \vbox (10.2865pt too high) detected at line 599
  []
 
 [21
@@ -1944,14 +1944,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation20}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.588 \end{frame}
+l.599 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.20}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.588 \end{frame}
+l.599 \end{frame}
                  
 
  <./assets/electronic/peri_pcb.jpg>]
@@ -1961,7 +1961,7 @@ File: assets/electronic/stm32_enclosure_final_test_pic1.jpg Graphic file (type
 jpg)
 <use assets/electronic/stm32_enclosure_final_test_pic1.jpg>
 Package pdftex.def Info: assets/electronic/stm32_enclosure_final_test_pic1.jpg 
- used on input line 608.
+ used on input line 619.
 (pdftex.def)             Requested size: 179.75201pt x 101.10011pt.
 <assets/electronic/stm32_enclosure_final_testpic2.jpg, id=2966, 1927.2pt x 1084
 .05pt>
@@ -1969,7 +1969,7 @@ File: assets/electronic/stm32_enclosure_final_testpic2.jpg Graphic file (type j
 pg)
 <use assets/electronic/stm32_enclosure_final_testpic2.jpg>
 Package pdftex.def Info: assets/electronic/stm32_enclosure_final_testpic2.jpg  
-used on input line 608.
+used on input line 619.
 (pdftex.def)             Requested size: 179.75201pt x 101.10011pt.
 <assets/electronic/psperi_enclosure_final_testpic1.jpg, id=2967, 1927.2pt x 108
 4.05pt>
@@ -1977,7 +1977,7 @@ File: assets/electronic/psperi_enclosure_final_testpic1.jpg Graphic file (type
 jpg)
 <use assets/electronic/psperi_enclosure_final_testpic1.jpg>
 Package pdftex.def Info: assets/electronic/psperi_enclosure_final_testpic1.jpg 
- used on input line 608.
+ used on input line 619.
 (pdftex.def)             Requested size: 170.28802pt x 95.77383pt.
 <assets/electronic/psperi_enclosure_final_testpic2.jpg, id=2968, 1927.2pt x 108
 4.05pt>
@@ -1985,10 +1985,10 @@ File: assets/electronic/psperi_enclosure_final_testpic2.jpg Graphic file (type
 jpg)
 <use assets/electronic/psperi_enclosure_final_testpic2.jpg>
 Package pdftex.def Info: assets/electronic/psperi_enclosure_final_testpic2.jpg 
- used on input line 608.
+ used on input line 619.
 (pdftex.def)             Requested size: 170.28802pt x 95.77383pt.
 
-Overfull \vbox (15.06464pt too high) detected at line 608
+Overfull \vbox (15.06464pt too high) detected at line 619
  []
 
 [22
@@ -1999,14 +1999,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation21}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.608 \end{frame}
+l.619 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.21}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.608 \end{frame}
+l.619 \end{frame}
                  
 
  <./assets/electronic/pcb1.jpeg> <./assets/electronic/pcb2.jpeg>] (build/Senior
@@ -2018,14 +2018,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation22}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.613 \subsection{Device Interfacing and Testing}
+l.624 \subsection{Device Interfacing and Testing}
                                                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.22}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.613 \subsection{Device Interfacing and Testing}
+l.624 \subsection{Device Interfacing and Testing}
                                                  
 
  <./assets/electronic/stm32_enclosure_final_test_pic1.jpg> <./assets/electronic
@@ -2035,10 +2035,10 @@ l_testpic1.jpg> <./assets/electronic/psperi_enclosure_final_testpic2.jpg>]
 File: assets/specs/bst_product_specs.png Graphic file (type png)
 <use assets/specs/bst_product_specs.png>
 Package pdftex.def Info: assets/specs/bst_product_specs.png  used on input line
- 660.
+ 671.
 (pdftex.def)             Requested size: 169.2951pt x 141.10983pt.
 
-Overfull \vbox (12.6192pt too high) detected at line 660
+Overfull \vbox (12.6192pt too high) detected at line 671
  []
 
 [24
@@ -2049,29 +2049,29 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation23}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.660 \end{frame}
+l.671 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.23}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.660 \end{frame}
+l.671 \end{frame}
                  
 
 ]
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 701.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 712.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 5.0pt on input line 701.
+(Font)              scaled to size 5.0pt on input line 712.
 <assets/specs/cws_product_specs.png, id=3399, 795.97375pt x 514.92375pt>
 File: assets/specs/cws_product_specs.png Graphic file (type png)
 <use assets/specs/cws_product_specs.png>
 Package pdftex.def Info: assets/specs/cws_product_specs.png  used on input line
- 701.
+ 712.
 (pdftex.def)             Requested size: 199.1693pt x 128.8406pt.
 
-Overfull \vbox (18.54945pt too high) detected at line 701
+Overfull \vbox (18.54945pt too high) detected at line 712
  []
 
 [25
@@ -2082,14 +2082,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation24}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.701 \end{frame}
+l.712 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.24}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.701 \end{frame}
+l.712 \end{frame}
                  
 
  <./assets/specs/bst_product_specs.png>]
@@ -2097,7 +2097,7 @@ l.701 \end{frame}
 File: assets/specs/adc_product_specs.png Graphic file (type png)
 <use assets/specs/adc_product_specs.png>
 Package pdftex.def Info: assets/specs/adc_product_specs.png  used on input line
- 747.
+ 758.
 (pdftex.def)             Requested size: 199.1693pt x 113.37347pt.
  [26
 
@@ -2107,14 +2107,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation25}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.747 \end{frame}
+l.758 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.25}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.747 \end{frame}
+l.758 \end{frame}
                  
 
  <./assets/specs/cws_product_specs.png (PNG copy)>]
@@ -2126,14 +2126,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation26}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.753 ...ection{Embedded Linux With Yocto Project}
+l.764 ...ection{Embedded Linux With Yocto Project}
                                                   
 pdfTeX warning (ext4): destination with the same identifier (name{page.26}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.753 ...ection{Embedded Linux With Yocto Project}
+l.764 ...ection{Embedded Linux With Yocto Project}
                                                   
 
  <./assets/specs/adc_product_specs.png>] [28
@@ -2144,14 +2144,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation27}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.782 \end{frame}
+l.793 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.27}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.782 \end{frame}
+l.793 \end{frame}
                  
 
 ]
@@ -2159,7 +2159,7 @@ l.782 \end{frame}
 File: assets/diagrams/embedded_linux.png Graphic file (type png)
 <use assets/diagrams/embedded_linux.png>
 Package pdftex.def Info: assets/diagrams/embedded_linux.png  used on input line
- 803.
+ 814.
 (pdftex.def)             Requested size: 175.65689pt x 106.23048pt.
  [29
 
@@ -2169,14 +2169,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation28}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.803 \end{frame}
+l.814 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.28}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.803 \end{frame}
+l.814 \end{frame}
                  
 
 ]
@@ -2184,7 +2184,7 @@ l.803 \end{frame}
 File: assets/diagrams/yocto-environment.png Graphic file (type png)
 <use assets/diagrams/yocto-environment.png>
 Package pdftex.def Info: assets/diagrams/yocto-environment.png  used on input l
-ine 832.
+ine 843.
 (pdftex.def)             Requested size: 180.67566pt x 88.499pt.
  [30
 
@@ -2194,24 +2194,24 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation29}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.832 \end{frame}
+l.843 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.29}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.832 \end{frame}
+l.843 \end{frame}
                  
 
  <./assets/diagrams/embedded_linux.png>]
 <assets/diagrams/layers.png, id=4218, 783.92876pt x 472.76625pt>
 File: assets/diagrams/layers.png Graphic file (type png)
 <use assets/diagrams/layers.png>
-Package pdftex.def Info: assets/diagrams/layers.png  used on input line 875.
+Package pdftex.def Info: assets/diagrams/layers.png  used on input line 886.
 (pdftex.def)             Requested size: 224.06544pt x 135.1221pt.
 
-Overfull \hbox (24.89615pt too wide) in paragraph at lines 875--875
+Overfull \hbox (24.89615pt too wide) in paragraph at lines 886--886
  [] 
  []
 
@@ -2223,14 +2223,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation30}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.875 \end{frame}
+l.886 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.30}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.875 \end{frame}
+l.886 \end{frame}
                  
 
  <./assets/diagrams/yocto-environment.png>]
@@ -2242,29 +2242,29 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation31}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.880 \subsection{Inter-Processor Communication}
+l.891 \subsection{Inter-Processor Communication}
                                                 
 pdfTeX warning (ext4): destination with the same identifier (name{page.31}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.880 \subsection{Inter-Processor Communication}
+l.891 \subsection{Inter-Processor Communication}
                                                 
 
  <./assets/diagrams/layers.png>]
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 927.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 938.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 6.0pt on input line 927.
+(Font)              scaled to size 6.0pt on input line 938.
 <assets/diagrams/ipc.drawio.png, id=4483, 983.675pt x 884.30376pt>
 File: assets/diagrams/ipc.drawio.png Graphic file (type png)
 <use assets/diagrams/ipc.drawio.png>
-Package pdftex.def Info: assets/diagrams/ipc.drawio.png  used on input line 927
+Package pdftex.def Info: assets/diagrams/ipc.drawio.png  used on input line 938
 .
 (pdftex.def)             Requested size: 185.22598pt x 166.5082pt.
 
-Overfull \vbox (4.4601pt too high) detected at line 927
+Overfull \vbox (4.4601pt too high) detected at line 938
  []
 
 [33
@@ -2275,14 +2275,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation32}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.927 \end{frame}
+l.938 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.32}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.927 \end{frame}
+l.938 \end{frame}
                  
 
 ] (build/SeniorDesignFinalPresentation.toc) [34
@@ -2293,14 +2293,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation33}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.932 \subsection{Web Application and Server}
+l.943 \subsection{Web Application and Server}
                                              
 pdfTeX warning (ext4): destination with the same identifier (name{page.33}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.932 \subsection{Web Application and Server}
+l.943 \subsection{Web Application and Server}
                                              
 
  <./assets/diagrams/ipc.drawio.png>]
@@ -2308,7 +2308,7 @@ l.932 \subsection{Web Application and Server}
 File: assets/misc/rewrite-it-in-rust.jpg Graphic file (type jpg)
 <use assets/misc/rewrite-it-in-rust.jpg>
 Package pdftex.def Info: assets/misc/rewrite-it-in-rust.jpg  used on input line
- 965.
+ 976.
 (pdftex.def)             Requested size: 79.66649pt x 79.66264pt.
  [35
 
@@ -2318,21 +2318,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation34}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.965 \end{frame}
+l.976 \end{frame}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{page.34}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.965 \end{frame}
+l.976 \end{frame}
                  
 
 ]
 <assets/misc/webapp.png, id=4920, 1033.8625pt x 1037.8775pt>
 File: assets/misc/webapp.png Graphic file (type png)
 <use assets/misc/webapp.png>
-Package pdftex.def Info: assets/misc/webapp.png  used on input line 1002.
+Package pdftex.def Info: assets/misc/webapp.png  used on input line 1013.
 (pdftex.def)             Requested size: 159.333pt x 159.95082pt.
  [36
 
@@ -2342,26 +2342,26 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation35}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1002 \end{frame}
+l.1013 \end{frame}
                   
 pdfTeX warning (ext4): destination with the same identifier (name{page.35}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1002 \end{frame}
+l.1013 \end{frame}
                   
 
  <./assets/misc/rewrite-it-in-rust.jpg>]
 <assets/misc/server1.png, id=5049, 1299.85625pt x 540.0175pt>
 File: assets/misc/server1.png Graphic file (type png)
 <use assets/misc/server1.png>
-Package pdftex.def Info: assets/misc/server1.png  used on input line 1032.
+Package pdftex.def Info: assets/misc/server1.png  used on input line 1043.
 (pdftex.def)             Requested size: 159.333pt x 66.19185pt.
 <assets/misc/server2.png, id=5050, 1990.43625pt x 680.5425pt>
 File: assets/misc/server2.png Graphic file (type png)
 <use assets/misc/server2.png>
-Package pdftex.def Info: assets/misc/server2.png  used on input line 1032.
+Package pdftex.def Info: assets/misc/server2.png  used on input line 1043.
 (pdftex.def)             Requested size: 159.333pt x 54.47566pt.
  [37
 
@@ -2371,14 +2371,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation36}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1032 \end{frame}
+l.1043 \end{frame}
                   
 pdfTeX warning (ext4): destination with the same identifier (name{page.36}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1032 \end{frame}
+l.1043 \end{frame}
                   
 
  <./assets/misc/webapp.png>]
@@ -2387,10 +2387,10 @@ l.1032 \end{frame}
 File: assets/diagrams/software_stack.drawio.png Graphic file (type png)
 <use assets/diagrams/software_stack.drawio.png>
 Package pdftex.def Info: assets/diagrams/software_stack.drawio.png  used on inp
-ut line 1047.
+ut line 1058.
 (pdftex.def)             Requested size: 359.05911pt x 211.26093pt.
 
-Overfull \vbox (9.12534pt too high) detected at line 1047
+Overfull \vbox (9.12534pt too high) detected at line 1058
  []
 
 [38
@@ -2401,14 +2401,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation37}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1047 \end{frame}
+l.1058 \end{frame}
                   
 pdfTeX warning (ext4): destination with the same identifier (name{page.37}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1047 \end{frame}
+l.1058 \end{frame}
                   
 
  <./assets/misc/server1.png> <./assets/misc/server2.png>]
@@ -2420,14 +2420,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation38}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1049 \section{Verification}
+l.1060 \section{Verification}
                              
 pdfTeX warning (ext4): destination with the same identifier (name{page.38}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1049 \section{Verification}
+l.1060 \section{Verification}
                              
 
  <./assets/diagrams/software_stack.drawio.png>]
@@ -2439,14 +2439,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation39}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1055 \end{frame}
+l.1071 \end{frame}
                   
 pdfTeX warning (ext4): destination with the same identifier (name{page.39}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1055 \end{frame}
+l.1071 \end{frame}
                   
 
 ] (build/SeniorDesignFinalPresentation.toc) [41
@@ -2457,14 +2457,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation40}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1057 \section{Challenges}
+l.1073 \section{Challenges}
                            
 pdfTeX warning (ext4): destination with the same identifier (name{page.40}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1057 \section{Challenges}
+l.1073 \section{Challenges}
                            
 
 ] [42
@@ -2475,14 +2475,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation41}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1066 \end{frame}
+l.1082 \end{frame}
                   
 pdfTeX warning (ext4): destination with the same identifier (name{page.41}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1066 \end{frame}
+l.1082 \end{frame}
                   
 
 ] (build/SeniorDesignFinalPresentation.toc) [43
@@ -2493,14 +2493,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation42}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1068 \section{Future Work}
+l.1084 \section{Future Work}
                             
 pdfTeX warning (ext4): destination with the same identifier (name{page.42}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1068 \section{Future Work}
+l.1084 \section{Future Work}
                             
 
 ] [44
@@ -2511,14 +2511,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation43}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1080 \end{frame}
+l.1104 \end{frame}
                   
 pdfTeX warning (ext4): destination with the same identifier (name{page.43}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1080 \end{frame}
+l.1104 \end{frame}
                   
 
 ] (build/SeniorDesignFinalPresentation.toc) [45
@@ -2529,14 +2529,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation44}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1082 \section{Closing}
+l.1106 \section{Closing}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{page.44}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1082 \section{Closing}
+l.1106 \section{Closing}
                         
 
 ] [46
@@ -2547,28 +2547,28 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation45}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1091 \end{frame}
+l.1115 \end{frame}
                   
 pdfTeX warning (ext4): destination with the same identifier (name{page.45}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1091 \end{frame}
+l.1115 \end{frame}
                   
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-121.
+145.
 
 (/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/tex/lat
 ex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 1121.
+(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 1145.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
-(Font)              scaled to size 7.0pt on input line 1121.
+(Font)              scaled to size 7.0pt on input line 1145.
  [47
 
 
@@ -2577,14 +2577,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation46}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1121 \end{frame}
+l.1145 \end{frame}
                   
 pdfTeX warning (ext4): destination with the same identifier (name{page.46}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1121 \end{frame}
+l.1145 \end{frame}
                   
 
 ]
@@ -2606,14 +2606,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Navigation47}
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1123 \end{document}
+l.1147 \end{document}
                      
 pdfTeX warning (ext4): destination with the same identifier (name{page.47}) has
  been already used, duplicate ignored
 
 \pgfpages@shipoutshipoutbox ...physicalpagesizes }
                                                   \endgroup 
-l.1123 \end{document}
+l.1147 \end{document}
                      
 
 ] (build/SeniorDesignFinalPresentation.aux)
@@ -2628,11 +2628,11 @@ hanged.
 Here is how much of TeX's memory you used:
  27063 strings out of 474116
  547692 string characters out of 5720541
- 1999187 words of memory out of 5000000
+ 2001187 words of memory out of 5000000
  48730 multiletter control sequences out of 15000+600000
  713612 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,19n,123p,762b,967s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,19n,123p,594b,967s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/fonts
 /type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb></nix/store/d80likrir75iwgnkr
 sq1dximagxlx8j7-texlive-2023-env-texmfdist/fonts/type1/adobe/sourcesanspro/Sour
@@ -2640,7 +2640,7 @@ ceSansPro-It.pfb></nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-
 texmfdist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb></nix/store
 /d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/fonts/type1/public
 /cm-super/sftt0800.pfb>
-Output written on build/SeniorDesignFinalPresentation.pdf (47 pages, 6653866 by
+Output written on build/SeniorDesignFinalPresentation.pdf (47 pages, 6653977 by
 tes).
 PDF statistics:
  6468 PDF objects out of 7423 (max. 8388607)
