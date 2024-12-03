@@ -1,5 +1,16 @@
 # ECE4820 Senior Design II Presentation Repo
 
+# Claims Investigation Committee Multi-Testing Input Device
+
+Copyright (c) 2024 Dylan Matthew-Garza
+All rights reserved.
+
+This project represents original work completed as part of Western Michigan University senior design project in collaboration with ZF Group.
+
+While this repository is public for demonstration and educational purposes, all rights are reserved. Unauthorized copying, modification, distribution, or use for commercial purposes is strictly prohibited without explicit permission from the copyright holder.
+
+Primary architect and implementer: Dylan Matthew-Garza
+
 This should contain all presentations for the class
 with directories named by the date to deliver the presentation.
 
