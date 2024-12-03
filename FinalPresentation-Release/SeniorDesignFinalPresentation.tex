@@ -41,6 +41,12 @@
 \begin{frame}[plain]
   \titlepage
   \small
+  \note[item]{Hello everyone}
+  \note[item]{Today we are excited to present our ZF-sponsored senior design project}
+  \note[item]{the Claims Investigation Commitee Multi-Input Testing Device}
+  \note[item]{This is brought to you by myself, Daniel Baker}
+  \note[item]{Dylan Garza}
+  \note[item]{and Rohullah Sah}
   \begin{multicols}{2}
       Faculty Advisor:\\
       Dr. Janos Grantner\hfill\\
@@ -65,6 +71,15 @@
 \begin{frame}
   \frametitle{ZF}
   \begin{minipage}{0.45\textwidth}
+    \note[item]{So what is ZF (or zed-eff)}
+    \note[item]{ZF is a global leader in automotive technology}
+    \note[item]{specialize in advanced safety systems}
+    \note[item]{vehicle control solutions}
+    \note[item]{ZF is a German-based global tech company specializing in the automotive industry.}
+    \note[item]{They're a tier 1 supplier for major automakers like Daimler, Tesla, and Waymo}
+    \note[item]{Located in Auburn Hills, ZF North American HQ focuses on commercial vehicle solutions}
+    \note[item]{This is where our project is based}
+    \note[item]{This is also home to the Claims Investigation Center or CIC.}
     \begin{block}{Who is ZF?}
       \begin{itemize}
           \small {
@@ -98,6 +113,12 @@
 \subsection{Claims Investigation Committee}
 \begin{frame}
   \frametitle{Claims Investigation Committee}
+  \note[item]{The Claims Investigation Center}
+  \note[item]{ZF's specialized team for analyzing field failures}
+  \note[item]{Like taking your iphone to apple store for repairs}
+  \note[item]{they ensure components meet reliability standards}
+  \note[item]{help improve testing methods for future products}
+  \note[item]{Our project supports their goal to enhance testing efficient, especially for new product lines like the Brake Signal Transmitter}
   \begin{block}{What is the Claims Investigation Center?}
       \begin{itemize}
           \small {
@@ -125,6 +146,26 @@
 \subsection{Project Motivation}
 \begin{frame}
     \frametitle{Motivation for the Project}
+      \note[item]{The CIC currently relies on the mBSP ABS Component Tester to validate parts like:}
+    \note[item]{Electronic Control Units}
+    \note[item]{Valves}
+    \note[item]{Pressure sensors}
+    \note[item]{Tester has key limitations}
+    \note[item]{It's rigid}
+    \note[item]{focus only on predefined components}
+    \note[item]{unsuitable for new or prototype components}
+    \note[item]{It's costly}
+    \note[item]{upgrades require significant effort and manufacturer support}
+    \note[item]{It's slow}
+    \note[item]{manual setups increase testing time and risk human error}
+    \note[item]{Upcoming release of ZF's Brake Signal Transmitter}
+    \note[item]{Issues become critical}
+    \note[item]{Launching in 2025}
+    \note[item]{Will be used in Daimler}
+    \note[item]{Highest volume commercial vehicle platform in North America}
+    \note[item]{Expected to be most sold product in cvs division}
+    \note[item]{A new solution is essential to efficiently analyze returned parts}
+
     \begin{minipage}{0.475\textwidth}
     \begin{block}{Challenges with Current Testing Methods}
         \begin{itemize}
@@ -157,6 +198,16 @@
 \subsection{Our Solution}
 \begin{frame}
     \frametitle{Multi-Input Testing Device}
+    \note[item]{Our solution, a multi-input testing device, directly supports CIC}
+    \note[item]{it provides a unified testing platform}
+    \note[item]{capable of handling multiple devices across various product lines}
+    \note[item]{the device is flexible and adaptable}
+    \note[item]{Designed to accommodate future components}
+    \note[item]{allows us to change acceptance criteria without significant effort}
+    \note[item]{Thirdly, our device automates testing.}
+    \note[item]{Reducing manual set up}
+    \note[item]{minimizing human error}
+    \note[item]{improving accuracy}
     \begin{block}{Addressed Challenges}
         \begin{itemize}
             \item Provides a unified testing platform for multiple devices
@@ -174,6 +225,22 @@
 \subsection{Key Devices Under Test}
 \begin{frame}
     \frametitle{Devices Our Solution Supports}
+    \note[item]{Our Multi-Input Testing Device supports several key components}
+    \note[item]{Brake Signal Transmitter or BST}
+    \note[item]{critical new component for 2025 production}
+    \note[item]{interprets the driver brake pedal pressure}
+    \note[item]{Continuous Wear Sensor}
+    \note[item]{Apart of new upcoming brake system platform (mBSP2)}
+    \note[item]{device monitors brake pad and disc wear}
+    \note[item]{provides warnings when brakes need maintenance}
+    \note[item]{Pressure sensor}
+    \note[item]{Apart of previous component tester as well}
+    \note[item]{measures pressure in vehicle control systems}
+    \note[item]{included as part of BST design}
+    \note[item]{Electronic Stability Control Module}
+    \note[item]{Prevents skidding and rollovers}
+    \note[item]{monitors vehicle stability and intervenes if necessary}
+    \note[item]{Test platform enhances CIC's abilities}
     \begin{block}{Key Devices Under Test (DUTs)}
     \begin{enumerate}
         \item {\DarkBold{Brake Signal Transmitter (BST)}}
@@ -210,13 +277,20 @@
   \centering
   \includegraphics[width=0.5\textwidth]{assets/diagrams/hardware.png}
   \begin{block}{What this project aims to accomplish:}
+    \note[item]{using stm32mp157f-dk2, has, Arm Cortex-M4 for external signal handling and Arm Cortex-A7 as 
+    an application processor}
+    \note[item]{Cortex-M4's primary role is reading signals from the device under test}
+    \note[item]{a pwms duty cycle, its frequency, a voltage level through and analog to digital converter and CAN frames}
+    \note[item]{processing this information is how the devices will be tested}
+    \note[item]{interfacing with the devices under test will also require some hardware for propper signal reading}
+    \note[item]{specifically for scaling and managing power and to ensure clean signals with minimal noise}
     \begin{enumerate}
       \item {\DarkBold{Device Interfacing}}
         \begin{enumerate}
           \item Properly read Device Signals using the ARM Cortex-M4 on the onboard microcontroller on the 
             \LightBold{STM32MP157F-DK2}:
             \begin{itemize}
-              \item PWM Duty Cycle
+              \item PWM duty cycle
               \item Frequency
               \item Voltages through an analog-to-digital converter (ADC)
               \item CAN frames
@@ -235,6 +309,12 @@
 \begin{frame}
   \frametitle{Project Solution (cont.)}
   \begin{block}{What this project aims to accomplish:}
+    \note[item]{the software running is the core to the solution, as it aims to simplify the end user, the person
+    running the test on the device}
+    \note[item]{The Cortex-A7, the application processor will be running a CUSTOM built linux image}
+    \note[item]{it will host a Custom web application in something called web assembly}
+    \note[item]{and will interact with a custom webserver that will also handle communication to the 
+    Cortex-M4 to gather test data and have it be available for download as a CSV}
     \begin{enumerate}
         \setcounter{enumi}{2}
         \large
@@ -254,6 +334,9 @@
 
 \begin{frame}
   \frametitle{Comprehensive System Block Diagram}
+  \note{Heres a comprehensive high-level block diagram of everything i just described. Due to time constraints 
+  I will have to skip over this but this presentation is available for download if you'd like to look at any section
+  in more detail}
   \centering
   \includegraphics[height=0.85\paperheight]{assets/diagrams/block_diagram.drawio.png}
 \end{frame}
@@ -263,6 +346,8 @@
 %==============================================================================
 \begin{frame}
   \frametitle{Gantt Chart}
+  \note{Using Atlassian's Jira, we were able to track the work we needed to do and what tasks to do 
+  and what tasks were dependencies on other tasks}
   \centering
   \includegraphics[height=0.85\paperheight]{assets/diagrams/gantt.png}
 \end{frame}
@@ -272,8 +357,25 @@
 %==============================================================================
 \begin{frame}
   \frametitle{Budget Projection}
+  \note{The following is our budget to show our total costs. The more expensive items like the STM discovery boards
+  and the continuous wear sensor
+  were provided to us by our sponsor, but the rest was provided by us or was a donation}
   \centering
   \includegraphics[height=0.80\paperheight]{assets/diagrams/budget.png}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Standards}
+  \begin{block}{Used Professional Standards}
+    \begin{itemize}
+      \item IPC-2221A (Generic Standard on PCB Design)
+      \item ISO 26262 (Automotive Functional Safety)
+      \item ISO 29119 (Software Testing)
+      \item IEC 61508 (Functional Safety of Electrical/Electronic Systems)
+      \item IEEE 802.1X (Port-based network access control)
+
+    \end{itemize}
+  \end{block}
 \end{frame}
 
 \AtBeginSubsection[]
@@ -290,6 +392,7 @@
 \subsection{Hardware Design}
 \begin{frame}
   \frametitle{Power Supply Schematic Design}
+  \note{Let’s start with the power supply design. Here, the input to our system is through a DC Barrel Jack which supplies 12V DC, but the components like sensors and microcontrollers operate at lower voltages. We use three main voltage regulators: this one ensures the input is smooth and regulated to 12V. Over here, it steps down the 12V to 5V. and the last one is adjustable, steps down 12V further to 3.146V using resistors to act as dividers and capacitors to filter out any electrical noise. }
   \begin{minipage}{0.7\textwidth}
     \begin{figure}
       \includegraphics[width=\textwidth]{assets/electronic/pwrsupply.jpg}
@@ -319,6 +422,7 @@
 
 \begin{frame}
   \frametitle{Schematic Design - Brake Signal Transmitter}
+  \note{Now, let’s move on to the Schematic of the Peripherals. This schematic design shows how the signals of the Brake Signal Transmitter are sent to the microcontroller. The sensor sends PWM signals (.7V – 4.5V) that represent how much force is applied to the brake. Our circuit uses resistors as voltage dividers and capacitors as noise filtering to ensure these signals are stable and within the microcontroller’s safe range to read. Diodes act as a safeguard, preventing voltage spikes or reversed connections from damaging the microcontroller. }
   \begin{minipage}{0.6\textwidth}
     \begin{figure}
       \includegraphics[width=\textwidth]{assets/electronic/bst_schem.jpg}
@@ -339,6 +443,7 @@
 
 \begin{frame}
   \frametitle{Peripheral Interface Schematic Diagram }
+  \note{We have the schematic interface of the other three sensors: The Continuous Wear Sensor, which monitors the brake pad wear by outputting a small voltage signal (.7V-4V) | the Pressure Sensor, which measures brake system pressure, outputting a voltage (.5V-4.5V) proportional to the pressure level. We have a capacitor to smooth out the noise in the signal | the String Potentiometer, which measures the displacement of the brake pedal and converts it to a proportional voltage (0V-4.75V). For all three schematic designs, we have resistors, which condition the signal so the microcontroller can process it correctly.}
   \begin{minipage}{0.495\textwidth}
     \begin{figure}
       \includegraphics[width=\textwidth]{assets/electronic/wear_schem.jpg}
@@ -366,8 +471,10 @@
     \end{block}
   \end{minipage}
 \end{frame}
+
 \begin{frame}
   \frametitle{Printed Circuit Board Design}
+  \note{Here is the Printed Circuit Board design for our power supply. This board takes 12V DC input from a DC jack and converts it into the usable outputs. This is where we connect the 12V input DC Jack power supply (J1). We have the capacitors over here, to filter out noise and voltage ripples. These are the voltage regulators, to ensure the outputs are stable and consistent even if the input voltage fluctuates. These are the output pins. These ones provide 12V for devices requiring higher voltage. These provide a regulated 5V and the ones at the bottom provide a 3.146V keeping the resistors as voltage dividers. All components are referenced to a common ground.}
   \begin{minipage}{0.3\textwidth}
     \begin{figure}
       \includegraphics[width=\textwidth]{assets/electronic/pwrsupply_pcb.jpg}
@@ -419,6 +526,8 @@
 
 \begin{frame}
   \frametitle{Peripherals Printed Circuit Board}
+  \note{ This is the Peripheral PCB Design. We have kept all the components of each sensor separate. This one over here is for BST, we have the Continuous Wear Sensor over here, the Pressure sensor on the right of the board, and the String Potentiometer at the bottom.
+Each Devices Under Test has its own dedicated connector for both signal input and power supply pin. J1 pins capture the PWM signals from the Brake Signal Transmitter, while these pins (J2 and J3) provide the 12V power needed to operate it. Similarly, J8 reads the Pressure Sensor input, and J9 delivers the 12V power required for its operation. J12 connects the Continuous Wear Sensor input, with J13 supplying it with 5V power. Lastly, the String Potentiometer uses J16 for its signal input and receives its 12V power from J17. We have the corresponding electrical components (resistors, capacitors, diodes). The processed signals are sent through specific output pins, while we have a common ground}
   \begin{minipage}{0.5\textwidth}
     \begin{block}{Key Features}
       \begin{itemize}
@@ -462,6 +571,7 @@
 
 \begin{frame}
   \frametitle{Fabricated PCB}
+  \note{Here is the fabricated and custom assembled PCB’s. Power management is on the left, and on the right is the Peripheral PCB.}
   \begin{minipage}{0.5\textwidth}
     \begin{figure}
       \includegraphics[width=0.9\textwidth]{assets/electronic/pcb1.jpeg}
@@ -479,6 +589,7 @@
 
 \begin{frame}
   \frametitle{Enclosure Design}
+  \note{Here, we have the enclosures for the combined PCBs which are the PS and Peri, and on the left is the enclosure for our microcontroller board. These enclosures are custom designed to securely house the PCBs, protect their components, and provide easy access for connections and maintenance. On these enclosure, we have included slots for the DC jack, open ports, and input/output pins ensuring straightforward and well-organized connections. The slots could also be used as ventilation to maintain stable temperature during testing. Inside, we have standoffs to hold the boards securely in place, preventing movement. The two-part assembly makes it easy to open these enclosures for any repairs, upgrades or debugging.}
   \begin{minipage}{0.475\textwidth}
     \begin{figure}
       \includegraphics[width=0.95\textwidth]{assets/electronic/stm32_enclosure_final_test_pic1.jpg}
@@ -502,6 +613,19 @@
 \subsection{Device Interfacing and Testing}
 \begin{frame}
   \frametitle{Firmware to Test Brake Signal Transmitter (BST)}
+  \note[item]{For the BST, the Cortex-M4 receives signals in the form of pulse-width modulation, or PWM}
+  \note[item]{This is a method where signals are turned on and off rapidly}
+  \note[item]{2 key parameters define PWM}
+  \note[item]{the frequency is how fast these signals are read }
+  \note[item]{for BST specifically reads at 200 Hz }
+  \note[item]{the pulse is repeated 200 cycles per second}
+  \note[item]{The duty cycle of the pulse is what percentage the signal is "on"}
+  \note[item]{so a duty cycle of 50}% means the signal is "on" half the time
+  \note[item]{The code measures these signals to calculate the brake stroke}
+  \note[item]{ensures it matches the sensitivity of 5.96}% Duty cycle per mm stroke
+  \note[item]{The test also offers option to use a string potentiometer}
+  \note[item]{this provides an analog voltage proportional to the brake stroke}
+  \note[item]{read by ADC on the cortex-M4}
   \begin{block}{Purpose}
     \small{
       \begin{itemize}
@@ -538,6 +662,10 @@
 % CWS Test implementation
 \begin{frame}
     \frametitle{Firmware to Test Continuous Wear Sensor (CWS)}
+  \note[item]{The Continuous Wear Seansor outputs analog voltages to indicate brake pad wear}
+  \note[item]{ranges from 0.7V for new pads to 4.0V for worn pads.}
+  \note[item]{The Cortex-M4 reads these voltages using Analog-to-Digital Converter or ADC}
+  \note[item]{the firmware code maps the readings to pad thickness using linear calibration shown in graph}
     \begin{block}{Purpose}
         \small{
             \begin{itemize}
@@ -575,6 +703,15 @@
 % PS Test implementation
 \begin{frame}
     \frametitle{Firmware to Test Pressure Sensor}
+  \note[item]{Similarly, the Pressure Sensor outputs voltages proportional to pressure}
+  \note[item]{0.5V for 0 bar to 4.5V for 10 bar}
+  \note[item]{The ADC reads these signals}
+  \note[item]{our firmware converts them to meaningful pressure values}
+  \note[item]{Both these tests incorporate thresholds to determine pass or fail outcomes}
+  \note[item]{Validation in all test occurs on the Cortex-M4 }
+  \note[item]{comparing calculated values with expected specifications.}
+  \note[item]{Results are then sent to the Cortex-A7 }
+  \note[item]{logged and displayed for user}
     \begin{block}{Purpose}
         \small{
             \begin{itemize}
@@ -618,6 +755,15 @@
 \begin{frame}
   \frametitle{Embedded Linux and The Yocto Project}
   \begin{columns}
+    \note[item]{due to time constrains i'll go over the contents of the following to slides}
+    \note[item]{As i mentioned earlier, the application processor is runnning embedded linux}
+    \note[item]{It gives a lot of benefits, namely its virtually the only option for any serious 
+    embedded operating system}
+    \note[item]{as it gives a rich ecosystem of open-source tools and software}
+
+    \note[item]{The Yocto Project was used to build a custom linux distribution}
+    \note[item]{Since it provides fine grain control of the resulting image that will be used
+    on the device}
     \column{0.475\textwidth}
     \begin{block}{Embedded Linux}
       \begin{itemize}
@@ -628,7 +774,7 @@
     \column{0.475\textwidth}
     \begin{block}{The Yocto Project}
       \begin{itemize}
-        \item Collection of tools to build a custom embedded Linux distribution
+        \item Collection of tools to build a \LightBold{custom} embedded Linux distribution
         \item Fine-grain control of every aspect of deployed image
       \end{itemize}
     \end{block}
@@ -686,7 +832,18 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Custom Linux Image for the STM32MP1-DK2}
+  \frametitle{Custom Linux Image for the STM32MP157F-DK2}
+  \note{The yocto project was essential for building and configuring}
+  \note[item]{hardware drivers}
+  \note[item]{Linux Kernel configurations}
+  \note[item]{Linux kernel device tree}
+  \note[item]{and using the layer structure created by the yocto project a custom layer of meta-data was made to build
+  and configure}
+  \note[item]{nginx, a webserver to host the web application}
+  \note[item]{wpa\_supplicant, a wi-fi access client}
+  \note[item]{among the meta-data there were build recipes for}
+  \note[item]{written programs like the web-application, web server, and the Cortex-M4 firmware}
+  \note[item]{a custom kernel and and a custom devicetree}
   \begin{minipage}{0.475\textwidth}
     \begin{block}{What is used in the deployed image?}
       \begin{itemize}
@@ -712,8 +869,7 @@
   \begin{minipage}{0.5\textwidth}
     \begin{figure}
       \includegraphics[width=1.125\textwidth]{assets/diagrams/layers.png}
-      \caption{\it Layer Model representation of this project for deploying onto a 
-      STM32MP1-DK2}
+      \caption{\it Layer Model representation of this project for deploying onto a STM32MP1-DK2}
     \end{figure}
   \end{minipage}
 \end{frame}
@@ -725,6 +881,16 @@
 \begin{frame}
   \frametitle{Inter-Process Communication on a Heterogenous Architecture}
   With a heterogenous architecture (ARM Cortex-A7 and ARM Cortex-M4) how can information be shared?\\
+  \note[item]{a major problem to solve in this project was having the two processors communicate to eachother}
+  \note[item]{the cortex-m4 and cortex-A7 are on the same system on chip so having them communicate is not for free}
+  \note[item]{OpenAMP is a project that aims to solve this project by standardizing how heterogenous architectures
+  communicate between cores}
+  \note[item]{to briefly summarize how its used in this project:}
+  \note[item]{it allows linux to load the cortex-M4 firmware after a device under test is determined}
+  \note[item]{communication between the two processors is possible, with the cortex-m4 utilizing some 
+  abstraction called virtuart and linux having a virtual file to read and write to}
+  \note[item]{and logging from the cortex-m4 is done through writing to a linux kernel trace file, which
+  will be used for logging the CSV data}
   {\em \scriptsize Hetergenous multiprocessor SoCs cannot directly communicate }
   \break
   \begin{minipage}{0.465\textwidth}
@@ -766,6 +932,8 @@
 \subsection{Web Application and Server}
 \begin{frame}
   \frametitle{Rust}
+  \note[item]{The Rust Programming language was used to write the following 2 pieces of software}
+  \note[item]{as it is a modern and safe language that is being looked into as an alternative to the C programming language}
   \begin{minipage}{0.75\textwidth}
     The Rust programming language was used to write both major \\ 
     applications (web-based application and web server) for 2 main \\ reasons.
@@ -802,6 +970,11 @@
 
 \begin{frame}
   \frametitle{Web-Application for User Interface}
+  \note[item]{The way the tester interacts with our solution is through the web application as a web assembly application
+  ,which is a modern solution to slow web programs which are usually written in javascript.}
+  \note[item]{Web assembly is much faster than javascript as it is ran in web browsers as a compiled binary program}
+  \note[item]{the web application allows a selection of the device they wish to test, and the starting of the test, which
+  sends serialized JSON data to the web server which we will talk about next}
   \begin{minipage}{0.5\textwidth}
     \begin{block}{Web Application in WebAssembly (WASM)}
       \begin{itemize}
@@ -830,6 +1003,13 @@
 
 \begin{frame}
   \frametitle{Custom API Web Server}
+  \note{the web server, also developed in rust, has multiple responsabilities}
+  \note[item]{it handles http requests from the web application}
+  \note[item]{responsible for the interprocess communication between the two processors}
+  \note[item]{it loads the firmware to the cortex-m4 from the information recieved by the web-application}
+  \note[item]{It polls the Cortex-M4 for test completion and once it is, it saves the written data in the kernel trace
+  and saves it for download}
+  \note[item]{**image shows the debug logging of the server application}
   \begin{minipage}{0.5\textwidth}
     \begin{block}{Web Server features}
       \begin{itemize}
@@ -843,6 +1023,7 @@
   \hfill
   \begin{minipage}{0.4\textwidth}
     \begin{figure}
+      \centering
       \includegraphics[width=\textwidth]{assets/misc/server1.png}
       \includegraphics[width=\textwidth]{assets/misc/server2.png}
       \caption{\it Console logging of server application}
@@ -851,6 +1032,14 @@
 \end{frame}
 
 \begin{frame}
+  \note{this diagram shows a comprehensive interactions of all 3 moving parts of the project}
+  \note[item]{it begins with the user choosing what device to test}
+  \note[item]{it sends a HTTP request to the server and then loads the necessary firmware}
+  \note[item]{once its loaded, a message is sent back to the server and the server updates the state of the 
+  web application user interface}
+  \note[item]{the server polls the test for completion and once it is, it notifies the server}
+  \note[item]{the server again updates the user interface on the web application and also shows a button to
+  download the CSV and to restart another test}
   \frametitle{Software Architecture}
   \begin{figure}
     \includegraphics[height=0.825\paperheight]{assets/diagrams/software_stack.drawio.png}
@@ -905,6 +1094,7 @@
   \frametitle{Thank you}
   Any Questions?
   \begin{block}{Project Sources}
+  \note[item]{some note here}
     \begin{itemize}
       \item \DarkBoldP{Custom Yocto Project Layer:}
         \begin{itemize}

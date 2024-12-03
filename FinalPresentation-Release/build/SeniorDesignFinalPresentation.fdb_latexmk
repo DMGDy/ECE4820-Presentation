@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1733030567.00031 "SeniorDesignFinalPresentation.tex" "build/SeniorDesignFinalPresentation.pdf" "SeniorDesignFinalPresentation" 1733030578.307 0
+["pdflatex"] 1733177945.03121 "SeniorDesignFinalPresentation.tex" "build/SeniorDesignFinalPresentation.pdf" "SeniorDesignFinalPresentation" 1733177957.14411 0
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1 2971 def0b6c1f0b107b3b936def894055589 ""
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc" 1 3021 665788e9679767ade2a71155215d25e0 ""
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/fonts/map/fontname/texfonts.map" 1 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -202,6 +202,7 @@
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/tex/latex/pgf/math/pgfmath.sty" 1 306 c56a323ca5bf9242f54474ced10fca71 ""
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/tex/latex/pgf/systemlayer/pgfsys.sty" 1 443 8c872229db56122037e86bcda49e14f3 ""
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/tex/latex/pgf/utilities/pgfkeys.sty" 1 274 5ae372b7df79135d240456a1c6f2cf9a ""
+  "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/tex/latex/pgf/utilities/pgfpages.sty" 1 36299 1cc9347091c2fb861270e66da42a0a3e ""
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/tex/latex/pgf/utilities/pgfrcs.sty" 1 325 f9f16d12354225b7dd52a3321f085955 ""
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/tex/latex/pgf/utilities/xxcolor.sty" 1 2232 b9a67bccba736ed334b4b1a860a85c6f ""
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/tex/latex/refcount/refcount.sty" 1 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
@@ -209,6 +210,7 @@
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/tex/latex/sansmathaccent/sansmathaccent.sty" 1 4282 5d27280ace1239baaa4a225df16125ff ""
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/tex/latex/sourcesanspro/T1SourceSansPro-TLF.fd" 1 6595 d29a190e70dfce87f0c64c45977f2f94 ""
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/tex/latex/sourcesanspro/sourcesanspro.sty" 1 6172 8007ee7cf6262667ed58bbed36a42c35 ""
+  "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/tex/latex/tools/calc.sty" 1 10214 547fd4d29642cb7c80bf54b49d447f01 ""
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/tex/latex/tools/enumerate.sty" 1 3468 0ef513f22d965f96b06adb5cff671cd7 ""
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/tex/latex/tools/multicol.sty" 1 32515 51caec75eda9c8890135f12f1a4eddc3 ""
   "/nix/store/d80likrir75iwgnkrsq1dximagxlx8j7-texlive-2023-env-texmfdist/tex/latex/translator/translator-basic-dictionary-English.dict" 1 3535 7dc96051305a7e943219126c49c44cd6 ""
@@ -224,7 +226,7 @@
   "/nix/store/xqizzd8x3y956ayqk8f4xsqab0r12rix-texlive-2023-env/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1 5467731 e55882290b9b69b8d428a6d960890ab9 ""
   "/nix/store/xqizzd8x3y956ayqk8f4xsqab0r12rix-texlive-2023-env/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1 8221929 92206ec65258aaf86dd4f98625a3b0af ""
   "/nix/store/xqizzd8x3y956ayqk8f4xsqab0r12rix-texlive-2023-env/share/texmf-var/web2c/texmf.cnf" 1 42643 7275a29cffb4534f32165dc2707737d7 ""
-  "SeniorDesignFinalPresentation.tex" 1733030407.73756 36011 7fe552b08d1075d24be39ebc5581c0c0 ""
+  "SeniorDesignFinalPresentation.tex" 1733177927.66496 52351 9668dcebe625db94ac4f1aa7c83222c5 ""
   "assets/WMU_Logo.png" 1732955166.01619 11441 64ec1c383668f1f8fdeeed8c56ce876e ""
   "assets/diagrams/block_diagram.drawio.png" 1732953973.68084 294663 acb0d6c89e51f736dd741b8f34f89460 ""
   "assets/diagrams/budget.png" 1732298089.93834 445582 a4c65f1cb81507fd728b82cde95ce320 ""
@@ -258,11 +260,11 @@
   "assets/specs/bst_product_specs.png" 1732171626.21395 203308 a2af3f418a3c24c6e5b10f25a2e315fb ""
   "assets/specs/cws_product_specs.png" 1732307400.36382 42276 55f442571f2797dbcbdb0fe5671e36d7 ""
   "assets/zf.png" 1731949788.91688 51906 8ced17a084bf849ab1716367d499d4a1 ""
-  "beamerthemeDark.sty" 1733030488.12503 1583 2d59b6a3c24938d307449d8ee0dcb707 ""
-  "build/SeniorDesignFinalPresentation.aux" 1733030578.17235 11514 8df7b1493d2a38a5e11089cd85c6f923 "pdflatex"
-  "build/SeniorDesignFinalPresentation.nav" 1733030578.17335 7569 7c1f040154767c5a6d0461862a013d91 "pdflatex"
-  "build/SeniorDesignFinalPresentation.out" 1733030578.17335 2588 a134084b44768ef9090b12927415d8c7 "pdflatex"
-  "build/SeniorDesignFinalPresentation.toc" 1733030578.17335 1010 8c131d503602e1942cbb77cbbcaea2f0 "pdflatex"
+  "beamerthemeDark.sty" 1733177171.56412 1666 5e79c5950370adb676e112d2696e9f88 ""
+  "build/SeniorDesignFinalPresentation.aux" 1733177956.98241 11671 755aa1a686564dbe9c03f5c04241eb8e "pdflatex"
+  "build/SeniorDesignFinalPresentation.nav" 1733177956.98341 7690 8371e1f54de7dace32b28bd6d66af814 "pdflatex"
+  "build/SeniorDesignFinalPresentation.out" 1733177956.98341 2588 7b4c613184d3eca4949554b9e6300cea "pdflatex"
+  "build/SeniorDesignFinalPresentation.toc" 1733177956.98341 1010 fd56372032d629bf85c143c208e05320 "pdflatex"
   (generated)
   "build/SeniorDesignFinalPresentation.aux"
   "build/SeniorDesignFinalPresentation.log"
