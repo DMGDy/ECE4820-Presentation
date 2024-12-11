@@ -74,7 +74,7 @@
     \note[item]{ZF is a global leader in automotive technology}
     \note[item]{-specialize in advanced safety systems}
     \note[item]{-vehicle control solutions}
-    \note[item]{ZF is a german-based a tier 1 supplier for major automakers like Daimler, Tesla, and Waymo}
+    \note[item]{ZF is a german-based a tier 1 supplier for major automakers like Daimler(Formerly mercedez benz), Tesla, and Waymo}
     \note[item]{Located in Auburn Hills, ZF North American HQ focuses on commercial vehicle solutions}
     \note[item]{-This is where our project is based}
     \note[item]{-This is also home to the Claims Investigation Center or CIC.}
@@ -159,11 +159,10 @@
     \note[item]{ -increase testing time and human error}
     \note[item]{With projects such as upcoming release of ZF's Brake Signal Transmitter}
     \note[item]{-Issues become critical}
-    \note[item]{BST is launching in 2025}
-    \note[item]{-Will be used in Daimler}
-    \note[item]{-which is the Highest volume commercial vehicle platform in North America}
-    \note[item]{-Expected to be most sold product in cvs division}
-    \note[item]{A new solution is essential to efficiently analyze returned parts}
+    \note[item]{BST is launching in 2025, -Will be used in Daimler, -which is the Highest volume commercial vehicle platform in North America, so a new solution}
+    \note[item]{-Expected to be most sold product in cvs division,A new solution is essential to efficiently analyze returned parts}
+    \note[item]{}
+    \note[item]{}
 
     \begin{minipage}{0.475\textwidth}
     \begin{block}{Challenges with Current Testing Methods}
@@ -275,8 +274,10 @@
   \centering
   \includegraphics[width=0.5\textwidth]{assets/diagrams/hardware.png}
   \begin{block}{What this project aims to accomplish:}
-    \note[item]{using stm32mp157f-dk2, has, Arm Cortex-M4 for external signal handling and Arm Cortex-A7 as 
+    \note[item]{using stm32mp157f-dk2, has, Arm Cortex-M4 as the peripheral processor and Arm Cortex-A7 as 
     an application processor}
+    \note[item]{important to note that this this duo processor setup is a heterogenous architecture, meaning there is 
+    2 processors on a single system on chip}
     \note[item]{Cortex-M4's primary role is reading signals from the device under test}
     \note[item]{a pwms duty cycle, its frequency, a voltage level through and analog to digital converter and CAN frames}
     \note[item]{processing this information is how the devices will be tested}
@@ -310,7 +311,8 @@
     \note[item]{the software running is the core to the solution, as it aims to simplify the end user, the person
     running the test on the device}
     \note[item]{The Cortex-A7, the application processor will be running a CUSTOM built linux image}
-    \note[item]{it will host a Custom web application in something called web assembly}
+    \note[item]{responsible for loading the Cortex-M4 firmware}
+    \note[item]{it will host a Custom web application in a new web application format called web assembly}
     \note[item]{and will interact with a custom webserver that will also handle communication to the 
     Cortex-M4 to gather test data and have it be available for download as a CSV}
     \begin{enumerate}
@@ -321,6 +323,7 @@
             \large
           \item Custom embedded \textbf{Linux} distribution that will run on the onboard ARM Cortex-A7
             microprocessor on the \LightBold{STM32MP157F-DK2}
+          \item Load firmware to Cortex-M4
           \item Simple user interface on web-based application
           \item Custom Webserver to process information from web application to microcontroller
           \item Communicate collected information from ARM Cortex-M4 to ARM Cortex-A7
@@ -624,19 +627,21 @@
 \subsection{Device Interfacing and Testing}
 \begin{frame}
   \frametitle{Firmware to Test Brake Signal Transmitter (BST)}
-  \note[item]{For the BST, the Cortex-M4 receives signals in the form of pulse-width modulation, or PWM}
-  \note[item]{This is a method where signals are turned on and off rapidly}
-  \note[item]{2 key parameters define PWM}
-  \note[item]{the frequency is how fast these signals are read }
-  \note[item]{for BST specifically reads at 200 Hz }
-  \note[item]{the pulse is repeated 200 cycles per second}
-  \note[item]{The duty cycle of the pulse is what percentage the signal is "on"}
-  \note[item]{so a duty cycle of 50}% means the signal is "on" half the time
-  \note[item]{The code measures these signals to calculate the brake stroke}
-  \note[item]{ensures it matches the sensitivity of 5.96}% Duty cycle per mm stroke
+  \note[item]{From the BST, the Cortex-M4 receives 2 signals in the form of pulse-width modulation, or PWM}
+  \note[item]{-This is a method where signals are turned on and off rapidly}
+  \note[item]{-2 key parameters define PWM}
+  \note[item]{ -the frequency is how fast these signals are read }
+  \note[item]{   -for BST specifically reads at 200 Hz }
+  \note[item]{   -the pulse is repeated 200 cycles per second}
+  \note[item]{ -The duty cycle of the pulse is what percentage the signal is "on"}
+  \note[item]{   -so a duty cycle of 50 percent means the signal is "on" half the time}
+  \note[item]{We use embedded c code to measure these signals}
+  \note[item]{-using timers to capture the frequency and duty cycle}
+  \note[item]{-ensures it matches the sensitivity of 5.96 percent Duty cycle per mm stroke}
   \note[item]{The test also offers option to use a string potentiometer}
-  \note[item]{this provides an analog voltage proportional to the brake stroke}
-  \note[item]{read by ADC on the cortex-M4}
+  \note[item]{-this provides an analog voltage proportional to the brake stroke}
+  \note[item]{-read by ADC on the cortex-M4}
+  \note[item]{-If not used we calculate the stroke using the duty cycles}
   \begin{block}{Purpose}
     \small{
       \begin{itemize}
@@ -674,9 +679,9 @@
 \begin{frame}
     \frametitle{Firmware to Test Continuous Wear Sensor (CWS)}
   \note[item]{The Continuous Wear Seansor outputs analog voltages to indicate brake pad wear}
-  \note[item]{ranges from 0.7V for new pads to 4.0V for worn pads.}
+  \note[item]{-ranges from 0.7V for new pads to 4.0V for worn pads.}
   \note[item]{The Cortex-M4 reads these voltages using Analog-to-Digital Converter or ADC}
-  \note[item]{the firmware code maps the readings to pad thickness using linear calibration shown in graph}
+  \note[item]{-the firmware code maps the readings to pad thickness using linear calibration shown in graph}
     \begin{block}{Purpose}
         \small{
             \begin{itemize}
@@ -715,14 +720,15 @@
 \begin{frame}
     \frametitle{Firmware to Test Pressure Sensor}
   \note[item]{Similarly, the Pressure Sensor outputs voltages proportional to pressure}
-  \note[item]{0.5V for 0 bar to 4.5V for 10 bar}
+  \note[item]{-0.5V for 0 bar to 4.5V for 10 bar}
   \note[item]{The ADC reads these signals}
-  \note[item]{our firmware converts them to meaningful pressure values}
-  \note[item]{Both these tests incorporate thresholds to determine pass or fail outcomes}
+  \note[item]{-our firmware converts them to meaningful pressure values}
+  \note[item]{All of these tests incorporate thresholds to determine pass or fail outcomes}
   \note[item]{Validation in all test occurs on the Cortex-M4 }
-  \note[item]{comparing calculated values with expected specifications.}
+  \note[item]{-comparing calculated values with expected specifications.}
   \note[item]{Results are then sent to the Cortex-A7 }
-  \note[item]{logged and displayed for user}
+  \note[item]{-logged and displayed for user}
+  \note[item]{Now I'll pass to Dylan to talk more about what Cortex-A7 does}
     \begin{block}{Purpose}
         \small{
             \begin{itemize}
@@ -756,41 +762,11 @@
         \vspace{0.2cm}
     \end{minipage}
 \end{frame}
-
 %==============================================================================
 % DESIGN AND IMPLEMENTATION SECTION: Embedded Linux
 %==============================================================================
 
 \subsection{Embedded Linux With Yocto Project}
-% Consolidation slide since we need to go faster
-\begin{frame}
-  \frametitle{Embedded Linux and The Yocto Project}
-  \begin{columns}
-    \note[item]{due to time constrains i'll go over the contents of the following to slides}
-    \note[item]{As i mentioned earlier, the application processor is runnning embedded linux}
-    \note[item]{It gives a lot of benefits, namely its virtually the only option for any serious 
-    embedded operating system}
-    \note[item]{as it gives a rich ecosystem of open-source tools and software}
-
-    \note[item]{The Yocto Project was used to build a custom linux distribution}
-    \note[item]{Since it provides fine grain control of the resulting image that will be used
-    on the device}
-    \column{0.475\textwidth}
-    \begin{block}{Embedded Linux}
-      \begin{itemize}
-        \item Industry standard for embedded Operating system
-        \item Rich ecosystem of open-source tools and software
-      \end{itemize}
-    \end{block}
-    \column{0.475\textwidth}
-    \begin{block}{The Yocto Project}
-      \begin{itemize}
-        \item Collection of tools to build a \LightBold{custom} embedded Linux distribution
-        \item Fine-grain control of every aspect of deployed image
-      \end{itemize}
-    \end{block}
-  \end{columns}
-\end{frame}
 
 \begin{frame}
   \frametitle{Embedded Linux}
@@ -1064,7 +1040,7 @@
     \note[item]{bottom center: Osciliscope visualization of PWM}
     \note[item]{top right: web application user interface}
     \note[item]{bottom right: live readings of PWMs with duty cycle and frequency}
-    \note[item]{Right side: will be excel file}
+    \note[item]{left side: will be excel file}
     \href{https://dylxndy.xyz/senior-design-presentation/verification}
     {\color{lime}{\ul{https://dylxndy.xyz/senior-design-presentation/verification}}}
   \end{block}
@@ -1073,6 +1049,18 @@
 \section{Challenges}
 \begin{frame}
   \frametitle{Challenges}
+  % -------Timer Configuration Notes------- %
+  \note[item]{Timer configuration was a bit of a challenge}
+  \note[item]{-1 timer could handle 200 Hz at 90 MHz clock speed (32 bit timer)}
+  \note[item]{-Other timer was 16 bit and could not handle 200 Hz}
+  \note[item]{-Used a prescaler of 14 to divide the clock speed to a manageable frequency}
+  \note[item]{-Still caused inconsistencies in the duty cycle on the A7 side}
+  \note[item]{-Selected a prescaler of 128 to reduce timer clock to 703 kHz}
+
+  % -------Mini-360 Buck Converter Notes------- %
+  \note[item]{Wanted to use a Mini-360 Buck Converter but found that it only scaled voltage down a limited amount from the given input voltage}
+  \note[item]{-Led us to use LM series voltage regulators instead}
+
   \begin{itemize}
     \item System Clock configuration with Devicetree
     \item Timer configuration for PWM signals
@@ -1082,6 +1070,36 @@
 \end{frame}
 
 \section{Future Work}
+\begin{frame}
+  \frametitle{Future Work}
+  % -------CAN Communication Notes------- %
+  \note[item]{Future work includes implementing CAN communication through the STM32MP1's CAN interface}
+  \note[item]{-Requires pin multiplexing and device tree configuration that we did not have time to implement}
+  % -------Acceptance Criteria Notes------- %
+  \note[item]{Ease change of acceptance criteria}
+  \note[item]{-Currently requires recompilation of the firmware}
+  \note[item]{-Could be done through the web application rather than the firmware}
+
+  % -------Professional-Grade Enclosure and Connectors Notes------- %
+  \note[item]{Professional-Grade Enclosure and Connectors}
+  \note[item]{-Current enclosure is 3D printed and connectors are not professional grade, they are just wires soldered to the PCB}
+  \note[item]{-Upgrading to a more professional standard similart to the mBSP teseter would greatly enhance usability and durability}
+  \begin{itemize}
+    \item Finish CAN implementation for ESCM
+      \begin{itemize}
+        \item USB to CAN used currently
+        \item enabled \DarkBoldP{CAN\_GS\_USB} module in Linux Kernel
+      \end{itemize}
+    \item Implement CAN through the STM32MP1's CAN interface
+       \begin{itemize}
+         \item Requires pin multiplexing and device tree configuration        \end{itemize}
+    \item Improve Web application appearance
+    \item Ease change of acceptance criteria
+    \item Professional-Grade Enclosure and Connectors
+
+  \end{itemize}
+
+\end{frame}\section{Future Work}
 \begin{frame}
   \frametitle{Future Work}
   \begin{itemize}

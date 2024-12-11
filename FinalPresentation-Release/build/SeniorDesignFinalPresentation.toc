@@ -9,9 +9,10 @@
 \beamer@subsectionintoc {2}{2}{Hardware Design}{15}{0}{2}
 \beamer@subsectionintoc {2}{3}{Device Interfacing and Testing}{23}{0}{2}
 \beamer@subsectionintoc {2}{4}{Embedded Linux With Yocto Project}{27}{0}{2}
-\beamer@subsectionintoc {2}{5}{Inter-Processor Communication}{32}{0}{2}
-\beamer@subsectionintoc {2}{6}{Web Application and Server}{34}{0}{2}
-\beamer@sectionintoc {3}{Verification}{39}{0}{3}
-\beamer@sectionintoc {4}{Challenges}{41}{0}{4}
-\beamer@sectionintoc {5}{Future Work}{43}{0}{5}
-\beamer@sectionintoc {6}{Closing}{45}{0}{6}
+\beamer@subsectionintoc {2}{5}{Inter-Processor Communication}{31}{0}{2}
+\beamer@subsectionintoc {2}{6}{Web Application and Server}{33}{0}{2}
+\beamer@sectionintoc {3}{Verification}{38}{0}{3}
+\beamer@sectionintoc {4}{Challenges}{40}{0}{4}
+\beamer@sectionintoc {5}{Future Work}{42}{0}{5}
+\beamer@sectionintoc {6}{Future Work}{44}{0}{6}
+\beamer@sectionintoc {7}{Closing}{46}{0}{7}
